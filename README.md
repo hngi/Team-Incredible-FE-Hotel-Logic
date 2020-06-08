@@ -1,2 +1,2 @@
 # Team-Incredible-FE-Hotel-Logic
-Hotel Website (Lead - Logic)
+Hotel Website (Lead - LogicDev)
