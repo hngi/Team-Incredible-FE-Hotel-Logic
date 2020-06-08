@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.page-title p {
+    width: 48%;
+    margin: 0 auto;
+}
+
+.facility {
+    height: 300px;
+    width: 300px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 250px 10px 10px 10px;
+}
+
+.facility p {
+    color: #fff;
+}
+
+.spa {
+    background: url('../images/spa.png');
+}
+
+.club {
+    background: url('../images/club.png');
+}
+
+footer {
+    background: url('../images/footer.svg');
+    background-position: contain;
+    
+}
