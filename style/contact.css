@@ -1,3 +1,8 @@
+main{
+  display: relative;
+  margin-top: 200px;
+}
+
 .contact-fqa,
 .contact-us,
 .costumer-rep {
@@ -58,7 +63,7 @@
   border-radius: 10px;
   padding: 50px 80px;
 }
-.social-icon h2, 
+.social-icon h2,
 .social-icon p {
   color: white;
 }
