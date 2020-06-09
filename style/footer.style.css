@@ -70,13 +70,13 @@ margin-top:20px;
     background: rgb(197, 149, 65); 
     font-size: 19px;
 }
-input {
+#foot-email{
     border: 0;
     outline: 0;
     background: transparent;
     border-bottom: 2px solid white;
   }
-  input:focus{
+  #foot-email:focus{
       border-bottom: 2.5px solid whitesmoke;
   }
   #foot-email:focus{
@@ -102,7 +102,7 @@ font-size:calc(1em + 1vh);
 .foot-location, .foot-mail,.foot-contact{
     display:flex;
 }
-#location ,#tele, #mail-box{
+#footer-location ,#tele, #mail-box{
     display:inline-block;
     color:white !important;
     fill:white;
@@ -146,7 +146,7 @@ font-size:calc(1em + 1vh);
     .foot-list-head{
         text-transform:uppercase;
     }
-    #location ,#tele, #mail-box{
+    #footer-location ,#tele, #mail-box{
         margin-right:50px;
     }
     .footer{
