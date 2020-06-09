@@ -1,0 +1,737 @@
+*{
+
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+}
+
+.link.active,
+.m__link.active
+{
+  text-decoration: none;
+  outline: none;
+  color: #C1A87D;
+}
+
+
+#loader{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+#loader .glow{
+
+  width: 150px;
+   height: 150px;
+   border-radius: 100%;
+   box-shadow: 0 0 0 10px #c1a87d,
+        0 0 0 20px #c1a87d,
+        0 0 0 30px #c1a87d;
+  animation-name: shadow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Salsa;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 45px;
+  font-size: 30px;
+}
+
+@keyframes shadow{
+   0% {box-shadow: 0px 0px 0px #333333;}
+   25% {box-shadow: 0 0 0 10px #C1A87D;}
+   50% {box-shadow: 0 0 0 10px #c1a87d,
+                    0 0 0 20px #c1a87d}
+   75% {box-shadow: 0 0 0 10px #c1a87d,
+                    0 0 0 20px #c1a87d,
+                    0 0 0 30px #c1a87d;}
+   100% {box-shadow: 0px 0px 0px #333333;}
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.active__link{
+  color: #C1A87D;
+}
+
+
+.navbar.home__page,
+.navbar.home__page a:link,
+.navbar.home__page h1.logo__name,
+.navbar.home__page .slogan
+{
+    color: #fff;
+}
+
+.navbar.other__pages,
+.navbar.other__pages a:link,
+.navbar.other__pages h1.logo__name,
+.navbar.other__pages .slogan
+{
+    color: #333333;
+}
+
+
+.nav.nav__abs{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  padding:5px 20px;
+}
+
+
+.nav.nav__fixed{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.nav.nav__fixed,
+.nav.nav__fixed a:link,
+.nav.nav__fixed h1.logo__name,
+.nav.nav__fixed .slogan
+{
+    color: #333333;
+}
+
+
+.navbar.col__nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar.row__nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #333333;
+}
+
+.col__nav h1.logo__name{
+  font-size: 36.785px;
+}
+
+.row__nav h1.logo__name{
+  font-size: 32.785px;
+}
+
+
+h1.logo__name{
+font-family: Salsa;
+font-style: normal;
+font-weight: normal;
+line-height: 45px;
+text-align: center;
+}
+
+.navbar.row__nav .slogan{
+  display: none;
+}
+
+.navbar.col__nav .slogan{
+  display: block;
+}
+
+p.slogan{
+font-family: Segoe UI;
+font-style: normal;
+font-weight: normal;
+font-size: 13.7944px;
+line-height: 18px;
+text-align: center;
+margin-top: -20px;
+}
+
+.navbar .nav__items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+}
+
+.col__nav .nav__items{
+  margin-top: 10px;
+}
+
+
+.navbar .nav__items__links{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: 40vw;
+  transform: translateX(37%);
+}
+
+.nav__items__links a:hover
+{
+  color:#C1A87D;
+}
+
+.navbar .profile{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+}
+
+.profile .profile__name,
+#mobile__items .profile__name
+{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+#mobile__items .profile__name{
+  font-size: 1.3rem;
+}
+
+.profile .profile__dp,
+#mobile__items .profile__dp
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url('../assets/images/juliana.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#mobile__items .profile__dp{
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+}
+
+
+.btn__nemu{
+    display:none;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+  .btn__nemu span{
+    height: 3px;
+    background: #333;
+  }
+
+  .btn__nemu span:not(:last-child){
+    margin-bottom: 6px;
+  }
+
+  .btn__nemu span:nth-of-type(1){
+    width: 20px;
+  }
+
+  .btn__nemu span:nth-of-type(2){
+    width: 30px;
+  }
+
+  .btn__nemu span:nth-of-type(3){
+    width: 25px;
+  }
+
+
+
+#close__btn {
+  display: block;
+  position: absolute;
+  left: 25px;
+  top: 40px;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  font-size: 40px;
+}
+
+#close__btn::before,
+#close__btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+#close__btn::before {
+  transform: rotate(45deg);
+}
+
+#close__btn::after {
+  transform: rotate(-45deg);
+}
+
+
+
+
+#hero{
+    background:  linear-gradient(0deg, rgba(84, 87, 177, 0.3), rgba(84, 87, 177, 0.3)), url('../assets/images/palm-trees-at-night.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+}
+
+.hero__contents{
+  width: 100%;
+  margin-top: 260px;
+  margin-left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.hero__text{
+width: 479px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 96px;
+letter-spacing: 2px;
+text-align: center;
+color: #FFFFFF;
+margin: 0;
+}
+.hero__text:nth-of-type(2){
+  margin-left: 20px;
+}
+#hero__btn{
+  width: 142px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 32px;
+  transform: translateY(30px);
+  background: #FFFFFF;
+  border-radius: 5px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #333333;
+
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: center;
+  margin: 10px 0px;
+  }
+/**************************************************
+
+    Styling of the mobile view menu
+
+**************************************************/
+#menu__div{
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -1000px;
+  width: 100%;
+  background-color: #333333;
+  opacity: 0;
+  color: #fff;
+}
+
+#mobile__items{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 70px;
+}
+.divider{
+  width: 80%;
+  height: 3px;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 0 5px #ccc;
+}
+
+#mobile__links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+font-family: Poppins;
+}
+
+#mobile__links a:link{
+  color: #fff;
+}
+
+#mobile__links a:not(:last-child){
+  margin-bottom: 40px;
+}
+
+
+@keyframes menu--list--anime-rev {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+
+  25% {
+    opacity: 1;
+    left: -100px;
+  }
+
+  50% {
+    opacity: 1;
+    left: -150px;
+  }
+
+  75% {
+    opacity: 1;
+    left: -300px;
+  }
+
+  100% {
+    opacity: 1;
+    left: -10000px;
+  }
+}
+
+@keyframes menu--list--anime {
+  0% {
+    opacity: 0;
+    left: -10000px;
+  }
+
+  25% {
+    opacity: 1;
+    left: -300px;
+  }
+
+  50% {
+    opacity: 1;
+    left: -150px;
+  }
+
+  75% {
+    opacity: 1;
+    left: -100px;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.menu--anime {
+  animation-timing-function: linear;
+  animation-name: menu--list--anime;
+  animation-duration: 0.45s;
+  animation-fill-mode: forwards;
+}
+
+.menu--anime-rev {
+  animation-timing-function: linear;
+  animation-name: menu--list--anime-rev;
+  animation-duration: 0.45s;
+  animation-fill-mode: forwards;
+}
+
+.test-sec{
+  height: 400px;
+  width: 100%;
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+/**************************************************
+
+    Styling of the mobile view menu Ends
+
+**************************************************/
+
+
+/**************************************************
+
+       Responsiveness of the Nav bar begins
+
+**************************************************/
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #nav_list{
+    display: none;
+  }
+  .navbar.home__page h1.logo__name,
+    .navbar.other__pages h1.logo__name
+  {
+    transform: translate(-20px,-10px);
+  }
+  .nav{
+    height: 80px;
+    background-color: #fff;
+  }
+
+  .nav.nav__fixed h1.logo__name{
+    transform: translate(-20px,-5px);
+  }
+
+  .navbar.col__nav .slogan{
+    display: none;
+  }
+
+  .navbar.home__page,
+  .navbar.home__page a:link,
+  .navbar.home__page h1.logo__name,
+  .navbar.home__page .slogan
+  {
+      color: #333;
+  }
+
+  .navbar.col__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #333333;
+  }
+
+
+  .nav h1.logo__name{
+    transform: translateY(-10px);
+    font-size: 30px;
+  }
+
+  .btn__nemu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5px;
+    transform: translate(-70px,-10px);
+  }
+
+  .nav.nav__fixed .btn__nemu{
+    transform: translate(-70px,-5px);
+
+  }
+
+  #hero{
+    margin-top: 80px;
+    /* height: 500px; */
+  }
+
+  .hero__contents{
+    margin-top: -30px;
+    margin-left: 3px;
+    height: 100%;
+  }
+  .hero__text{
+     width: 320px;
+     font-size: 40px;
+  }
+
+  .hero__text:nth-of-type(2){
+    margin-top: -20px;
+  }
+
+}
+
+
+/***
+  Iphone5
+*/
+
+@media screen and (device-aspect-ratio: 40/71) {
+
+  #mobile__links{
+    font-size: 1.2rem;
+  }
+
+  #mobile__links a:not(:last-child){
+    margin-bottom: 30px;
+  }
+
+
+  .btn__nemu{
+    transform: translate(-60px,-10px);
+
+  }
+
+
+
+  .nav h1.logo__name{
+    transform: translateY(-10px);
+    font-size: 25px;
+  }
+
+
+    #hero{
+      margin-top: 80px;
+      /* height: 500px; */
+    }
+
+    .hero__contents{
+      margin-top: -20px;
+      margin-left: 3px;
+      height: 100%;
+    }
+    .hero__text{
+       width: 250px;
+       font-size: 32px;
+    }
+
+    .hero__text:nth-of-type(2){
+      margin-top: -40px;
+    }
+
+
+}
+
+/***
+  Iphone6
+*/
+
+@media screen and (device-aspect-ratio: 375/667) {
+
+  .btn__nemu{
+    transform: translate(-80px,-10px);
+
+  }
+
+
+
+  .btn__nemu span{
+    height: 3px;
+    background: #333;
+  }
+
+  .btn__nemu span:not(:last-child){
+    margin-bottom: 7px;
+  }
+
+  .btn__nemu span:nth-of-type(1){
+    width: 20px;
+  }
+
+  .btn__nemu span:nth-of-type(2){
+    width: 30px;
+  }
+
+  .btn__nemu span:nth-of-type(3){
+    width: 25px;
+  }
+
+
+}
+
+
+/*
+weird phones like pixel2 iphone 6,7,8 with screen size between 411 and 414
+
+*/
+
+@media (min-width: 411px) and (max-width: 440px) {
+
+  .btn__nemu{
+    transform: translate(-90px,-10px);
+
+  }
+
+  .nav.nav__fixed .btn__nemu{
+    transform: translate(-90px,-5px);
+
+  }
+
+
+
+  .btn__nemu span{
+    height: 3px;
+    background: #333;
+  }
+
+  .btn__nemu span:not(:last-child){
+    margin-bottom: 7px;
+  }
+
+  .btn__nemu span:nth-of-type(1){
+    width: 25px;
+  }
+
+  .btn__nemu span:nth-of-type(2){
+    width: 35px;
+  }
+
+  .btn__nemu span:nth-of-type(3){
+    width: 30px;
+  }
+
+}
+
+/**************************************************
+
+       Responsiveness of the Nav bar Ends
+
+**************************************************/
