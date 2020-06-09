@@ -1,0 +1,20 @@
+.contact-fqa {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+}
+.contact-fqa > div {
+  width: 50%;
+}
+.fqa {
+  padding: 15px 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.fqa > p {
+  padding: 10px 0;
+}
+.collapse-btn {
+  float: right;
+  cursor: pointer;
+}
