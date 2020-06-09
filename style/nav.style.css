@@ -42,6 +42,10 @@ a:hover{
   color: #333;
 }
 
+.m__link:visited{
+  color: #fff;
+}
+
 .link.active,
 .m__link.active
 {
@@ -448,6 +452,7 @@ margin: 0;
   background: #fff;
   border-radius: 100%;
   box-shadow: 0 0 5px #ccc;
+  margin-top: 20px;
 }
 
 #mobile__links{
