@@ -135,6 +135,11 @@ font-size:calc(1em + 1vh);
 #foot-num{
     margin-top:0px;
 }
+.foot-scale{
+    transform: scale(.75);
+    transform-origin: 50% 40%;
+
+}
 @media (max-width:500px){
     .foot-social{
         justify-content: space-around;
