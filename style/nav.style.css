@@ -4,19 +4,20 @@
 }
 
 a,
-a:hover,
-a:visited {
+a:hover {
     text-decoration: none;
     outline: none;
-    color: #fff;
 }
 
-.link.active,
-.m__link.active
+
+
+.other__pages .link.active,
+#mobile__links a.m__link.active,
+.home__page .link.active,
 {
   text-decoration: none;
   outline: none;
-  color: #C1A87D;
+  color: #C1A87D!important;
 }
 
 
@@ -81,6 +82,8 @@ body{
 
 .navbar.home__page,
 .navbar.home__page a:link,
+.navbar.home__page a:visited,
+#mobile__links a.m__link:visited,
 .navbar.home__page h1.logo__name,
 .navbar.home__page .slogan
 {
@@ -89,6 +92,7 @@ body{
 
 .navbar.other__pages,
 .navbar.other__pages a:link,
+.navbar.other__pages a:visited,
 .navbar.other__pages h1.logo__name,
 .navbar.other__pages .slogan
 {
@@ -205,7 +209,8 @@ margin-top: -20px;
   transform: translateX(37%);
 }
 
-.nav__items__links a:hover
+.other__pages .nav__items__links a:hover,
+.home__page .nav__items__links a:hover
 {
   color:#C1A87D;
 }
