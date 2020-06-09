@@ -1,20 +1,41 @@
-.contact-fqa {
+.contact-fqa,
+.contact-us {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 15px;
+  padding: 30px 15px;
 }
-.contact-fqa > div {
+.contact-fqa > div,
+ .contact-us > div {
   width: 50%;
 }
+.fqa-answer {
+  max-height: 0;
+  transition: max-height 0.2s ease-in;
+}
+
+.collapse-p {
+  padding: 18px 0;
+}
+
+.contact-us > div > h1,
+.contact-us > div > p {
+  text-align: center;
+}
+
 .fqa {
-  padding: 15px 10px;
-  border-bottom: 1px solid #f1f1f1;
+  padding: 0 10px;
+  border-bottom: 1px solid #dad6d6;
+  overflow: hidden;
 }
 .fqa > p {
-  padding: 10px 0;
+  font-size: 18px;
 }
 .collapse-btn {
   float: right;
   cursor: pointer;
+  opacity: 0.5;
+}
+.collapse-btn:hover {
+  opacity: 1;
 }
