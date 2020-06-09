@@ -71,8 +71,11 @@ main{
 .phone-icon span:first-child,
 .email-icon span:first-child {
   margin-right: 20px;
+  color: black;
 }
 .fb-tw-inst {
+  display: flex;
+  justify-content: start;
   margin: 50px 0;
 }
 .fb-tw-inst span {
@@ -153,4 +156,43 @@ main{
 }
 .collapse-btn:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 870px) {
+  main {
+    margin-top: 40px;
+  }
+  .contact-fqa > div,
+  .contact-us > div,
+  .social-icon, 
+  .contact-form {
+    width: 90%;
+  }
+  .contact-fqa h1 {
+    font-size: 1.3rem;
+  }
+  .contact-connect,
+  .contact-form-row {
+    padding: 0 5px;
+  }
+  .contact-fqa, .contact-fqa > div, .contact-fqa h1 {
+    padding: 5px 10px;
+  }
+  .social-icon {
+    padding: 5px 30px;
+  }
+  .fb-tw-inst {
+    justify-content: center;
+  }
+  .contact-form {
+    margin: 30px 0;
+  }
+  .contact-form div:not(:last-child),
+  .form-btn {
+    margin: 15px 0;
+  }
+  .form-btn button {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
 }
