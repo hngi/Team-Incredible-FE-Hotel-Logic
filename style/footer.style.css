@@ -138,7 +138,7 @@ font-size:calc(1em + 1vh);
 @media (max-width:500px){
     .foot-social{
         justify-content: space-around;
-        margin-left:20px;
+        margin-left:0px;
     }
     .foots-sub{
         font-size:16px !important;
