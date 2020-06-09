@@ -34,9 +34,10 @@
 
 
 .page-title p {
-    width: 48%;
+    width: 68%;
     margin: 0 auto;
-    line-height: 2;
+    line-height: 1.8;
+    font-size: 20px;
 }
 
 .facility {
@@ -100,6 +101,11 @@
 }
 
 @media screen and (max-width:960px) {
+
+    /* .nav__items__links {
+
+    } */
+
      #facilities .d-flex {
         flex-direction: column;
         justify-content: center;
