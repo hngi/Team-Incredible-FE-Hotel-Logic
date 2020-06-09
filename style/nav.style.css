@@ -1,5 +1,6 @@
 *{
-
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -106,8 +107,8 @@ a:hover{
 
 
 body{
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   overflow-x: hidden;
 }
 
@@ -146,7 +147,7 @@ body{
   right: 0;
   top: 0;
   z-index: 9999;
-  padding:5px 20px;
+  padding:20px 20px;
 }
 
 
@@ -158,6 +159,7 @@ body{
   z-index: 9999;
   background-color: #fff;
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  padding:20px 20px;
 }
 
 .nav.nav__fixed,
@@ -216,7 +218,7 @@ font-weight: normal;
 font-size: 13.7944px;
 line-height: 18px;
 text-align: center;
-margin-top: -20px;
+margin-top: 5px;
 }
 
 .navbar .nav__items{
@@ -227,7 +229,7 @@ margin-top: -20px;
 }
 
 .col__nav .nav__items{
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 
