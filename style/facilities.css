@@ -50,28 +50,28 @@
 }
 
 .spa {
-    background: url('../images/spa.png') no-repeat;
+    background: url('../assets/images/facilities/spa.png') no-repeat;
 }
 
 .club {
-    background: url('../images/club.png') no-repeat;
+    background: url('../assets/images/facilities/club.png') no-repeat;
 }
 
 .events {
     padding: 210px 0 24px 25px;
-    background: url('../images/events.png') no-repeat;
+    background: url('../assets/images/facilities/events.png') no-repeat;
 }
 
 .beauty {
-    background: url('../images/saloon.png') no-repeat;
+    background: url('../assets/images/facilities/saloon.png') no-repeat;
 }
 
 .restaurant {
-    background: url('../images/restaurant.png') no-repeat;
+    background: url('../assets/images/facilities/restaurant.png') no-repeat;
 }
 
 .gym {
-    background: url('../images/gym.png') no-repeat;
+    background: url('../assets/images/facilities/gym.png') no-repeat;
 }
 
 .icon-box {
@@ -86,9 +86,34 @@
     display: flex;
 }
 
+#facilities-icon {
+    margin-top: 60px;
+}
+
 .icon-section {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width:960px) {
+     #facilities .d-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #facilities-icon .icon-box{
+        flex-wrap: wrap;
+    }
+    .icon-section {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .page-title p {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:700px) {
