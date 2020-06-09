@@ -1,0 +1,151 @@
+.contact-fqa,
+.contact-us,
+.costumer-rep {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.costumer-rep {
+  padding-bottom: 50px;
+}
+.contact-fqa,
+.contact-us{
+  padding: 50px 15px;
+ }
+.contact-fqa > div,
+ .contact-us > div {
+  width: 50%;
+}
+.contact-us > div > h1,
+.contact-us > div > p {
+  text-align: center;
+}
+.contact-us > div > p {
+  line-height: 2;
+  font-size: 20px;
+}
+.fqa-answer {
+  max-height: 0;
+  transition: max-height 0.2s ease-in;
+}
+
+/* CONTACT FORM */
+.contact-form-row {
+  position: relative;
+  padding: 0 30px;
+}
+.contact-form-border {
+  position: absolute;
+  width: 70%;
+  border: 1px solid #dad6d6;
+  border-radius: 20px;
+  height: 100%;
+  right: 0;
+  z-index: -2;
+}
+.contact-connect {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+.social-icon, .contact-form {
+  width: 40%;
+}
+.social-icon {
+  background: rgba(207, 179, 52, 0.829);
+  border: 0;
+  border-radius: 10px;
+  padding: 50px 80px;
+}
+.social-icon h2, 
+.social-icon p {
+  color: white;
+}
+.addr-icon span:first-child,
+.phone-icon span:first-child,
+.email-icon span:first-child {
+  margin-right: 20px;
+}
+.fb-tw-inst {
+  margin: 50px 0;
+}
+.fb-tw-inst span {
+  background: white;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.fb-icon {
+  padding: 10px 13px;
+}
+.tw-icon, .ins-icon {
+  padding: 10px;
+}
+.social-icon h2 {
+  padding: 30px 0;
+}
+.social-icon p {
+  margin: 15px 0;
+}
+.contact-form h2,
+.social-icon h2 {
+  text-align: center;
+}
+.contact-form form {
+  width: 100%;
+}
+
+.contact-form input {
+  width: 90%;
+  border: 0;
+  padding: 10px;
+}
+.contact-form div:not(:last-child) {
+  margin: 50px 0;
+  border-bottom: 1px solid #dad6d6;
+}
+.form-btn {
+  display: flex;
+  justify-content: center;
+}
+.form-btn button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  background: rgba(207, 179, 52, 0.829);
+  color: white;
+  cursor: pointer;
+}
+.form-btn button:hover {
+  background: rgba(194, 163, 23, 0.829);
+}
+/* CONTACT FORM END*/
+
+.collapse-p {
+  padding: 18px 0;
+}
+.fqa {
+  margin: 20px 0;
+  padding: 0 10px;
+  border-bottom: 1px solid #dad6d6;
+  overflow: hidden;
+}
+.contact-fqa h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 30px 0;
+}
+.fqa > p {
+  font-size: 18px;
+  padding: 15px 0;
+}
+.collapse-btn {
+  float: right;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.collapse-btn:hover {
+  opacity: 1;
+}
