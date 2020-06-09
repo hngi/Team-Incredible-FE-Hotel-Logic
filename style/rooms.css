@@ -6,14 +6,12 @@
     -ms-box-sizing: border-box;
 }
 
-.room-body {
-    background: #E5E5E5
-}
-
 .room-container {
     max-width: 1200px;
     margin: 0 auto;
-    background: #FFFFFF
+    background: #FFFFFF;
+    position: relative;
+    top: 78px;
 }
 
 /* ############### FILTER AND INPUT ROOMS STYLE */

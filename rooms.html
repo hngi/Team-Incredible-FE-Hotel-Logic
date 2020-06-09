@@ -110,59 +110,50 @@
                      Body contents begins
 
     ------------------------------------------->
-  <div class="room-container">
+  <main class="room-container">
     <!-- ############### filter and inputs goes here######### -->
-    <div class="room-filter">
+    <form class="room-filter">
+      <!-- TODO: Change to form -->
       <div class="search">
         <input type="text" placeholder="filter search">
       </div>
       <!-- <div class="room-options"> -->
       <div class="room-default room-check-in">
-        <h5>check in</h5>
-        <select name="check-in" id="check-in">
-          <option value="17 Feb">17 Feb</option>
-          <option value="18 Feb">18 Feb</option>
-          <option value="19 Feb">19 Feb</option>
-          <option value="20 Feb">17 Feb</option>
-        </select>
+        <h5>Check in</h5>
+        <input type="date" name="check-in" value="2020-06-12" min="2020-06-12">
       </div>
       <div class="room-default room-check-out">
-        <h5>check out</h5>
-        <select name="check-out" id="check-out">
-          <option value="23 Feb">23 Feb</option>
-          <option value="24 Feb">24 Feb</option>
-          <option value="25 Feb">25 Feb</option>
-          <option value="26 Feb">26 Feb</option>
-        </select>
+        <h5>Check out</h5>
+        <input type="date" name="check-out" value="2020-06-12" min="2020-06-12">
       </div>
       <div class="room-default room-number">
         <h5>rooms</h5>
         <select name="room-number" id="room-number">
-          <option value="01">01</option>
-          <option value="02">02</option>
-          <option value="03">03</option>
-          <option value="04">04</option>
-          <option value="05">05</option>
-          <option value="06">06</option>
-          <option value="07">07</option>
-          <option value="08">08</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
         </select>
       </div>
       <div class="room-default guest">
         <h5>guests</h5>
         <select name="guests" id="guests">
-          <option value="01">01</option>
-          <option value="02">02</option>
-          <option value="03">03</option>
-          <option value="04">04</option>
-          <option value="05">05</option>
-          <option value="06">06</option>
-          <option value="07">07</option>
-          <option value="08">08</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
         </select>
       </div>
       <!-- </div> -->
-    </div>
+    </form>
     <!-- ##### room-sub-container contains all three rooms in a single row################ -->
     <div class="sub-cont room-sub-container-1">
       <!-- ##### room-(n) contains room details, img, price and tag################ -->
@@ -246,7 +237,7 @@
       </div>
     </div>
     <!-- ##### pagination for rooms ends ################ -->
-  </div>
+  </main>
 
 
 
