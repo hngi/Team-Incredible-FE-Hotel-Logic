@@ -159,6 +159,9 @@ main{
 }
 
 @media screen and (max-width: 870px) {
+  main {
+    margin-top: 40px;
+  }
   .contact-fqa > div,
   .contact-us > div,
   .social-icon, 
