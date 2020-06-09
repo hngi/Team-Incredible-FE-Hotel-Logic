@@ -89,6 +89,7 @@ margin-top:20px;
     width:200px;
     color:white;
     transition: 1s;
+    margin-top: 40px;
 }
 .foot-info-box{
     margin-top:20px;
@@ -106,12 +107,19 @@ font-size:calc(1em + 1vh);
     display:inline-block;
     color:white !important;
     fill:white;
-    width:40px;
+    width:35px;
     height:40px;
     margin-right: 30px;
 }
+.foot-help{
+    margin-top:13px;
+}
+.foot-comp p , .foot-service p{
+    margin-bottom: 20px !important;
+}
 .foot-location-info{
     display:inline-block;
+    padding-top:10px;
 }
 .foot-social{
     width:200px;
