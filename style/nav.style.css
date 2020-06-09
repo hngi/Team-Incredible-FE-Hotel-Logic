@@ -431,7 +431,6 @@ margin: 0;
   width: 100%;
   background-color: #333333;
   opacity: 0;
-  display: none;
   color: #fff;
 }
 
@@ -476,31 +475,26 @@ font-family: Poppins;
 @keyframes menu--list--anime-rev {
   0% {
     opacity: 1;
-    display: block;
     left: 0;
   }
 
   25% {
     opacity: 1;
-    display: block;
     left: -100px;
   }
 
   50% {
     opacity: 1;
-    display: block;
     left: -150px;
   }
 
   75% {
     opacity: 1;
-    display: block;
     left: -300px;
   }
 
   100% {
     opacity: 1;
-    display: none;
     left: -10000px;
   }
 }
@@ -508,31 +502,26 @@ font-family: Poppins;
 @keyframes menu--list--anime {
   0% {
     opacity: 0;
-    display: block;
     left: -10000px;
   }
 
   25% {
     opacity: 1;
-    display: block;
     left: -300px;
   }
 
   50% {
     opacity: 1;
-    display: block;
     left: -150px;
   }
 
   75% {
     opacity: 1;
-    display: block;
     left: -100px;
   }
 
   100% {
     opacity: 1;
-    display: block;
     left: 0;
   }
 }
@@ -551,12 +540,12 @@ font-family: Poppins;
   animation-fill-mode: forwards;
 }
 
-/* .test-sec{
+.test-sec{
   height: 400px;
   width: 100%;
   background-color: red;
   margin-bottom: 20px;
-} */
+}
 
 /**************************************************
 
