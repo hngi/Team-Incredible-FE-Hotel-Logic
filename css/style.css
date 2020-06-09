@@ -74,6 +74,23 @@
     background: url('../images/gym.png') no-repeat;
 }
 
+.icon-box {
+    border: 1px solid #EEEEEE;
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+    padding-top: 40px;
+}
+
+.main-d-flex {
+    display: flex;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (max-width:700px) {
 
     .page-title p {
@@ -82,15 +99,23 @@
     .facility { 
         margin-bottom: 10px;
     }
-    .d-flex {
+
+   #facilities .d-flex {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
+    #facilities-icon .icon-box{
+        flex-wrap: wrap;
+    }
+
+    .icon-section {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .icon-box {
+        margin-bottom: 40px;
+    }
 }
 
-footer {
-    background: url('../images/footer.svg');
-    background-position: contain;
-    
-}
