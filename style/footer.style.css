@@ -40,7 +40,7 @@ font-size:calc(1.4rem + 2vh);
 }
 .foot-head h3{
     font-size:calc(0.3rem + 1vh);
-    margin-top:-30px;
+    margin-top:0px;
 }
 .foot-info{
     width:100%;
@@ -117,6 +117,7 @@ font-size:calc(1em + 1vh);
     width:200px;
     display:flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 #foot-fb , #foot-tw ,#foot-inst{
     width:30px;
@@ -131,9 +132,16 @@ font-size:calc(1em + 1vh);
 .foot-last{
     display:flex;
     justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 #foot-num{
     margin-top:0px;
+}
+.foot-scale{
+    transform: scale(.75);
+    transform-origin: 50% 40%;
+
 }
 @media (max-width:500px){
     .foot-social{
@@ -169,8 +177,8 @@ font-size:calc(1em + 1vh);
         justify-content: center !important;
         margin:auto !important;
         text-align: center;
-        line-height: -0px;
         padding-top:20px;
+        
     }
     .foot-service{
         display:none;
