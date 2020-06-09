@@ -35,12 +35,12 @@ a:visited {
 
 #loader .glow{
 
-  width: 150px;
-   height: 150px;
+  width: 100px;
+   height: 100px;
    border-radius: 100%;
-   box-shadow: 0 0 0 10px #c1a87d,
-        0 0 0 20px #c1a87d,
-        0 0 0 30px #c1a87d;
+   box-shadow: 0 0 0 5px #ab8e61,
+        0 0 0 10px #C1A87D,
+        0 0 0 15px #c7b68b;
   animation-name: shadow;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -53,17 +53,17 @@ a:visited {
   font-style: normal;
   font-weight: normal;
   line-height: 45px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 @keyframes shadow{
    0% {box-shadow: 0px 0px 0px #333333;}
-   25% {box-shadow: 0 0 0 10px #C1A87D;}
-   50% {box-shadow: 0 0 0 10px #c1a87d,
-                    0 0 0 20px #c1a87d}
-   75% {box-shadow: 0 0 0 10px #c1a87d,
-                    0 0 0 20px #c1a87d,
-                    0 0 0 30px #c1a87d;}
+   25% {box-shadow: 0 0 0 5px #ab8e61;}
+   50% {box-shadow: 0 0 0 5px #C1A87D,
+                    0 0 0 10px #c7b68b}
+   75% {box-shadow: 0 0 0 5px #c7b68b,
+                    0 0 0 10px #C1A87D,
+                    0 0 0 15px #ab8e61;}
    100% {box-shadow: 0px 0px 0px #333333;}
 }
 
@@ -93,6 +93,10 @@ body{
 .navbar.other__pages .slogan
 {
     color: #333333;
+}
+
+.nav{
+  max-width: 1440px;
 }
 
 

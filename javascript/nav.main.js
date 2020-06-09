@@ -10,11 +10,16 @@
     let nav_div = document.getElementById('nav__div');
     let loader = document.getElementById('loader');
 
+    document.body.style.overflowY = "hidden";
+
      window.onscroll = function() {myFunction()};
      window.onload = function() {myFunction()};
 
     function myFunction() {
-      loader.style.display = "none";
+      if(loader){
+        document.body.style.overflowY = "auto";
+        loader.style.display = "none";
+      }
       if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         navbar_inner.classList.add("row__nav");
         navbar_inner.classList.remove("col__nav");
