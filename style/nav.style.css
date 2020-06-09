@@ -4,22 +4,59 @@
 }
 
 a,
-a:hover {
+/* a:hover, */
+a:visited {
     text-decoration: none;
     outline: none;
+    /* color: #fff; */
+}
+
+.row__nav a:visited{
+  color: #333;
+}
+
+.home__page.col__nav a:hover{
+    color: #C1A87D;
+}
+
+.other__pages.col__nav a:hover{
+    color: #C1A87D;
 }
 
 
+.home__page.col__nav a:visited{
+  color: #fff;
+}
+.other__pages.col__nav a:visited{
+    color: #333;
+}
 
-.other__pages .link.active,
-#mobile__links a.m__link.active,
-.home__page .link.active,
+.other__pages.col__nav a.active{
+    color: #C1A87D;
+}
+.home__page.col__nav a.active{
+  color: #C1A87D;
+}
+
+.row__nav a.active{
+  color: #C1A87D;
+}
+
+.link.active,
+.m__link.active
 {
   text-decoration: none;
   outline: none;
-  color: #C1A87D!important;
+  color: #C1A87D;
 }
 
+
+.tester{
+  width: 100%;
+  height: 1000px;
+  background: red;
+  margin-top: 100px;
+}
 
 #loader{
   position: absolute;
@@ -80,10 +117,8 @@ body{
 }
 
 
-.navbar.home__page,
-.navbar.home__page a:link,
-.navbar.home__page a:visited,
-#mobile__links a.m__link:visited,
+.navbar.home__page.col__nav,
+.navbar.home__page.col__nav a:link,
 .navbar.home__page h1.logo__name,
 .navbar.home__page .slogan
 {
@@ -92,15 +127,17 @@ body{
 
 .navbar.other__pages,
 .navbar.other__pages a:link,
-.navbar.other__pages a:visited,
 .navbar.other__pages h1.logo__name,
 .navbar.other__pages .slogan
+.navbar.home__page.row__nav,
+.navbar.home__page.row__nav a:link,
 {
     color: #333333;
 }
 
 .nav{
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 
@@ -209,8 +246,7 @@ margin-top: -20px;
   transform: translateX(37%);
 }
 
-.other__pages .nav__items__links a:hover,
-.home__page .nav__items__links a:hover
+.nav__items__links a:hover
 {
   color:#C1A87D;
 }
