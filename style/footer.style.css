@@ -147,13 +147,15 @@ font-size:calc(1em + 1vh);
         text-transform:uppercase;
     }
     #footer-location ,#tele, #mail-box{
-        margin-right:50px;
+        margin-right:20px;
+        width:30px;
+        height:30px;
     }
     .footer{
         font-size: 13px;
     }
     .foot-list-head{
-        font-size: 30px;
+        font-size: 25px;
     }
     .foot-comp{
         display:none;
