@@ -35,6 +35,7 @@ input, select{
     width: 15%;
     /* background: blue */
 }
+
 #check-in,
 #check-out,
 #room-number,
@@ -42,11 +43,17 @@ input, select{
     padding: 5px 10px;
     border: 1px solid rgba(128, 95, 3, 0.404);
     border-radius: 5px;
+    width: 250px;
 }
 
-.gallery-container{
-  margin: 2rem 0 6rem 0;
+.search input {
+    border-bottom: 1px solid #E5E5E5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
 }
+
 
 .gallery{
   display: flex;
@@ -73,13 +80,16 @@ input, select{
   padding-top: 0.2rem;
 }
 
-.room__type{
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 27px;
-color: #999999;
-padding-top: .5rem;
+/* ############ RROMS STYLES FOR MOBILE STARTS HERE  ################################## */
+.room-default h5 {
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    font-family: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+    padding-top: 10px;
+    font-size: 14px;
+    color: #333333;
+    width: 100px;
+    padding-bottom: 5px
 }
 
 .room__price{
@@ -134,12 +144,13 @@ font-size: 18px;
   background-color: #C1A87D;
 }
 
-.control{
-  color: #333;
-  margin: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.room h5 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 43px;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 20px;
 }
 
 footer{
@@ -227,18 +238,18 @@ footer{
 }
 
 /* PAGINATION STARTS HERE */
-.pagination-container{
+.pagination-container {
     margin-bottom: 20rem;
-  }
-  
-  .pagination{
+}
+
+.pagination {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: baseline;
-  }
-  
-  .pagination-link{
+}
+
+.pagination-link {
     height: 40px;
     width: 40px;
     padding: .5rem;
@@ -252,26 +263,26 @@ footer{
     align-items: center;
     border-radius: 50%;
     transition: all .3s linear;
-  }
-  
-  .pagination-link:hover{
+}
+
+.pagination-link:hover {
     color: #FFF !important;
     background-color: #C1A87D;
-  }
-  
-  .pglink-active{
+}
+
+.pglink-active {
     color: #FFF;
     background-color: #C1A87D;
-  }
-  
-  .control{
+}
+
+.control {
     color: #333;
     margin: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+
 /* PAGINATION ENDS HERE */
 /* ############ ROOMS STYLES FOR MOBILE ENDS HERE  ################################## */
 /* ############ ALL STYLES FOR DESKTOP AND TABLETS STARTS HERE  ################################## */
@@ -303,10 +314,19 @@ footer{
 
     .room-default select {
         width: 150px;
+        border: 1px solid blue;
     }
 
     .search input {
         padding-top: 30px;
+        width: 150px;
+    }
+
+    #check-in,
+    #check-out,
+    #room-number,
+    #guests {
+        width: 150px;
     }
 
     p.slogan {
