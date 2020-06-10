@@ -257,12 +257,12 @@ padding: 7px 15px;
 font-size: 20px;
 border: 0;
 color: white;
-background: rgb(189, 166, 63);
+background: rgb(197, 149, 65); 
 border-radius: 5px;
 cursor: pointer;
 }
 .subscribe-form button:hover {
-background: rgb(168, 148, 55);
+background: rgb(180, 136, 60); 
 }
 
 .partners-head h2,
@@ -354,8 +354,10 @@ margin-top: 200px;
      margin-top:-140px;
    }
    .test-map{
-    padding-top:0px !important;
 
+    padding-top:0px !important;
+    margin-bottom:70px !important;
+    
   }
 }
 @media(min-width:800px){
@@ -384,6 +386,9 @@ margin-top: 200px;
 @media (max-width:800px){
   .map-img{
     width:9vh;
+  }
+  .test-map{
+    margin-bottom: 50px;
   }
 }
 
