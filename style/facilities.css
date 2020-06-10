@@ -46,17 +46,17 @@ main{
 }
 
 .facility {
-    height: 300px;
-    width: 300px;
-    margin: 60px 0;
-    padding: 250px 10px 0 25px;
+    height: 350px;
+    width: 350px;
+    margin: 30px 0;
+    padding: 300px 10px 0 25px;
 }
 
 .facility:hover {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
-    transition: 3s;
+    transition: 2s;
 }
 
 .facility p {
@@ -67,27 +67,33 @@ main{
 
 .spa {
     background: url('../assets/images/facilities/spa.png') no-repeat;
+    background-size: contain;
 }
 
 .club {
     background: url('../assets/images/facilities/club.png') no-repeat;
+    background-size: contain;
 }
 
 .events {
-    padding: 210px 0 24px 25px;
+    padding: 270px 0 24px 25px;
     background: url('../assets/images/facilities/events.png') no-repeat;
+    background-size: contain;
 }
 
 .beauty {
     background: url('../assets/images/facilities/saloon.png') no-repeat;
+    background-size: contain;
 }
 
 .restaurant {
     background: url('../assets/images/facilities/restaurant.png') no-repeat;
+    background-size: contain;
 }
 
 .gym {
     background: url('../assets/images/facilities/gym.png') no-repeat;
+    background-size: contain;
 }
 
 .icon-box {
