@@ -98,6 +98,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.golf-tour, .party-event, .event-conf,
+.suites, .room-1, .room-2 {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+.golf-tour p, .party-event p, .event-conf p,
+.suites p, .room-1 p, .room-2 p {
+  font-size: 24px;
+  color: white;
+  padding: 20px 10px;
+}
 .suites {
   background: url('../assets/images/home/hotel-suites.jpg');
   background-position: center;
@@ -119,6 +131,7 @@
 .deal-wrapper > div {
   padding: 10px 0;
 }
+
 .deal-text > p {
   line-height: 2;
 }

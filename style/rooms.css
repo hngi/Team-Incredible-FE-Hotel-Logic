@@ -30,8 +30,16 @@
 .room-check-out,
 .guest,
 .room-number {
-    width: 100px;
+    width: 15%;
     /* background: blue */
+}
+#check-in,
+#check-out,
+#room-number,
+#guests {
+    padding: 5px 10px;
+    border: 1px solid rgba(128, 95, 3, 0.404);
+    border-radius: 5px;
 }
 
 .search input {
@@ -226,6 +234,27 @@
         width: 25px;
         display: inherit;
     }
+    .room-check-in, #check-in,
+    .room-check-out, #check-out,
+    .room-number, #room-number,
+    .guest, #guests {
+        width: 70%;
+    }
+.room-filter {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+}
+    .search,
+    .room-check-in,
+    .room-check-out,
+    .guest,
+    .room-number {
+        width: 90%;
+        /* background: blue */
+    }
 }
 
 @media screen and (min-width: 750px) {
@@ -260,7 +289,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        max-width: 1000px;
+        width: 90%;
         margin: 0 auto;
         padding-top: 30px;
     }
