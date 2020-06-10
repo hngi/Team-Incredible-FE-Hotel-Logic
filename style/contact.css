@@ -185,6 +185,10 @@ main{
   .contact-fqa, .contact-fqa > div, .contact-fqa h1 {
     padding: 5px 10px;
   }
+  .contact-first-wrapper {
+    display: block;
+    width: 90%;
+}
 }
 
 /* CONTACT FORM NEW */
@@ -209,6 +213,10 @@ main{
     line-height: 1.8;
     font-size: 20px;
     margin-bottom: 65px;
+}
+.contact-first-wrapper {
+  display: flex;
+  width: 90%;
 }
 
 .contact-form {
@@ -250,8 +258,7 @@ main{
   padding: 20px;
   align-items: center;
   justify-content: space-between;
-  font-weight: 600;
-  
+  font-weight: 600;  
 }
 
 .sendmessage form {
@@ -310,16 +317,16 @@ form .submit:hover{
 
 @media screen and (min-width: 700px) {
   .contact-div {
-    width: 800px;
+    width: 90%;
     position: relative;
-    padding: 30px;
-    left: calc(50% - 330px);
+    padding: 10px;
+    left: calc(45% - 330px);
   }
 }
 
 @media screen and (min-width: 900px) {
   .contact-form {
     position: relative;
-    left: -30%;
+    left: -20%;
   }
 }
