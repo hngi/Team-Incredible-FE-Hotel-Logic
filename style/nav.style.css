@@ -154,7 +154,7 @@ body{
   top: 0;
   z-index: 9999;
   background-color: #fff;
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  box-shadow: 0 8px 6px -6px #999;
   padding:20px 20px;
 }
 
@@ -686,7 +686,7 @@ font-family: Poppins;
 @media (min-width: 320px) and (max-width: 480px) {
 
   .navbar.row__nav{
-    margin-top: 15px;
+    margin-top: 5px;
   }
 
    .navbar.col__nav{
