@@ -257,6 +257,7 @@
     height: 150px;
     width: 150px;
     padding-top: 25px;
+    margin-bottom: 30px;
   }
   .our-partners > div {
     display: flex;
