@@ -167,9 +167,9 @@ align-items: flex-end;
 }
 .golf-tour p, .party-event p, .event-conf p,
 .suites p, .room-1 p, .room-2 p {
-font-size: 24px;
-color: white;
-padding: 20px 10px;
+  font-size: 18px;
+  color: white;
+  padding: 20px 10px;
 }
 .suites {
 background: url('../assets/images/home/hotel-suites.jpg');
@@ -198,9 +198,9 @@ line-height: 2;
 }
 
 .subscribe-form {
-display: flex;
-justify-content: center;
-width: 100%;
+  display: flex;
+  justify-content: center;
+  width: auto;
 }
 .subscribe-form > div {
 display: flex;
@@ -248,7 +248,7 @@ padding: 50px 30px;
 font-family: Poppins;
 font-style: normal;
 font-weight: 600;
-font-size: 32px;
+font-size: 40px;
 line-height: 54px;
 color: #333333;
 text-align: center;
@@ -316,10 +316,20 @@ background-size: contain;
 background-repeat: no-repeat;
 margin-top: 200px;
 }
+@media(max-width:1000px){
+   .test{
+     margin-top:-140px;
+   }
+   .test-map{
+    padding-top:0px !important;
+    
+  }
+}
 @media(min-width:800px){
   .map-img5{
     margin-top:33%;
   }
+ 
   .map-img3{
     margin-left:10.42%;
   }
@@ -331,9 +341,7 @@ margin-top: 200px;
 @media (max-width:448px){
   .test-text{
     justify-self: center;
-    margin-top: -100px !important;
-    width:250px;
-    height:200px;
+    
   }
   .map-img5{
     margin-top:28%;
@@ -392,11 +400,12 @@ margin-top: 200px;
     padding-top: 25px;
     margin-bottom: 30px;
   }
-  .our-partners > div {
+  .our-partners {
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    margin: 0 44px;
   }
   .enjoy-deal {
     padding-bottom: 20px;
@@ -404,23 +413,42 @@ margin-top: 200px;
   .deal-wrapper > div {
     padding-top: 0;
     padding-bottom: 5px;
-    margin: 0;
+    margin: 0 50px;
+  }
+  .deal-wrapper .deal-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 46px;
   }
   .deal-wrapper,
-  .subscribe-form > div {
+  .subscribe-form  div {
     width: 90%;
   }
   .deal-head h2 {
     font-size: 1.3rem;
     margin-top: 0;
   }
+  .subscribe-form div {
+    margin-top: 20px;
+  }
   .subscribe-form input {
-    width: 60%;
-    font-size: 16px;
+    padding-top: 20px;
+    width: 81%;
+    font-size: 8px;
   }
   .subscribe-form button {
     padding: 5px 10px;
-    width: 100px;
+    width: auto;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .our-partners > div {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    width: 74%;
+    margin: 0;
   }
 }
