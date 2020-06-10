@@ -1,13 +1,17 @@
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #ffffff;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+.container {
+  width: auto;
+  margin: 0 auto;
 }
 
 .services,
@@ -42,27 +46,47 @@ justify-content: space-between;
 flex-wrap: wrap;
 }
 .service-wrapper > div {
-width: 20%;
-cursor: pointer;
+  /* width: 20%; */
+  cursor: pointer;
 }
 
-.airport-pickup, 
+.box {
+  height: 200px;
+  width: 200px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 20px;
+  padding-top: 52px;
+}
+
+.box-image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 20px;
+}
+
+.box p {
+  text-align: center;
+}
+
+/* .airport-pickup, 
 .comp-breakfast, 
 .cocktail, 
 .city-tour {
   border-radius: 5px;
-}
+} */
 
-.airport-pickup > div,
+/* .airport-pickup > div,
 .comp-breakfast > div,
 .cocktail > div,
 .city-tour > div {
-display: flex;
-justify-content: center;
-padding-bottom: 10px;
-width: 60%;
-text-align: center;
-}
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  width: 60%;
+  text-align: center;
+} */
 
 .room-suites-wrapper > div {
 width: 47%;
@@ -296,33 +320,50 @@ margin-top: 200px;
 }
 
 @media screen and (max-width: 870px) {
-  .airport-pickup > div,
+  /* .airport-pickup > div,
   .comp-breakfast > div,
   .cocktail > div,
   .city-tour > div {
     width: 90%;
   }
-  .services, .room-suites {
-    padding: 20px 0;
-  }
-  .room-suites-wrapper > div,
-  .event-wrapper > div,
-  .service-wrapper > div {
-    width: 90%;
-    margin-bottom: 25px;
-  }
   .airport-pickup,
   .comp-breakfast,
   .cocktail,
   .city-tour {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    width: 100%;
+  } */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+  }
+  .services, .room-suites {
+    padding: 20px 0;
+  }
+  .room-suites-wrapper > div,
+  .event-wrapper > div{
+    height: 214px;
+    width: 90%;
+    margin-bottom: 25px;
   }
   .service-wrapper {
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .upcoming-event {
+    padding-top: 214px;
+  }
+  .box {
+    height: 150px;
+    width: 150px;
+    padding-top: 25px;
+    margin-bottom: 30px;
   }
   .our-partners > div {
     display: flex;
@@ -331,7 +372,12 @@ margin-top: 200px;
     width: 90%;
   }
   .enjoy-deal {
-    padding: 20px 0;
+    padding-bottom: 20px;
+  }
+  .deal-wrapper > div {
+    padding-top: 0;
+    padding-bottom: 5px;
+    margin: 0;
   }
   .deal-wrapper,
   .subscribe-form > div {
@@ -339,6 +385,7 @@ margin-top: 200px;
   }
   .deal-head h2 {
     font-size: 1.3rem;
+    margin-top: 0;
   }
   .subscribe-form input {
     width: 60%;
