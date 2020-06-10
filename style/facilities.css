@@ -310,6 +310,48 @@ main{
 
 }
 
+
+
+
+/***********
+
+iPad pro
+*********/
+
+/* Portrait */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    #facilities .d-flex{
+      margin-left:35px;
+    }
+
+    .facility{
+      width: 300px;
+      height: 250px;
+      padding: 20px 20px 0 0;
+      margin: 25px 0;
+
+    }
+
+
+      .icon-section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(2,150px);
+        grid-column-gap: 10px;
+        grid-row-gap: 40px;
+        padding: 20px 100px;
+        margin-left: 5px;
+      }
+
+  }
+
+
 /*
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
@@ -338,7 +380,7 @@ main{
   }
 
   .icon-section .icon-box{
-  
+
   }
 
 }
