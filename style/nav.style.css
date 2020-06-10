@@ -908,44 +908,6 @@ weird phones like pixel2 iphone 6,7,8 with screen size between 411 and 414
 
 
 
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  /* body{background: red;} */
-
-  .navbar .nav__items__links{
-    width: 100%;
-    font-size: 1rem;
-    transform: translateX(20px);
-  }
-
-  p.slogan{
-    font-size: 1.1rem;
-  }
-
-  .nav__abs .nav__items__links{
-      transform: translate(5px,15px);
-      font-size: 1.1rem;
-  }
-
-  .nav.nav__fixed h1.logo__name{
-    font-size: 1.3rem;
-  }
-
-  .hero__contents{
-    margin-left: 10px;
-  }
-
-  .hero__contents .hero__text{
-    font-size: 54px;
-  }
-
-}
-
 
 
 
@@ -1063,6 +1025,47 @@ iPad pro
     font-size: 60px;
   }
 
+
+}
+
+
+
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* body{background: red;} */
+
+  p.slogan{
+    font-size: 1.1rem;
+  }
+
+  .navbar .nav__items__links{
+    width: 90%;
+    font-size: 1.0rem;
+    transform: translateX(60px);
+  }
+
+  .nav__abs .nav__items__links{
+    font-size: 1.1rem;
+      transform: translate(40px,25px);
+  }
+
+  .nav.nav__fixed h1.logo__name{
+    font-size: 1.7rem;
+  }
+
+  .hero__contents{
+    margin-left: 10px;
+  }
+
+  .hero__contents .hero__text{
+    font-size: 50px;
+  }
 
 }
 
