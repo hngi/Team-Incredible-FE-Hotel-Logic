@@ -246,12 +246,16 @@
   }
   .room-suites-wrapper > div,
   .event-wrapper > div{
+    height: 214px;
     width: 90%;
     margin-bottom: 25px;
   }
   .service-wrapper {
     justify-content: space-evenly;
     width: 100%;
+  }
+  .upcoming-event {
+    padding-top: 214px;
   }
   .box {
     height: 150px;
@@ -267,6 +271,10 @@
   }
   .enjoy-deal {
     padding: 20px 0;
+  }
+  .deal-wrapper > div {
+    padding: 0;
+    margin: 0;
   }
   .deal-wrapper,
   .subscribe-form > div {
