@@ -19,6 +19,8 @@
       if(loader){
         document.body.style.overflowY = "auto";
         loader.style.display = "none";
+      }else{
+          loader.style.display = "none";
       }
       if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         navbar_inner.classList.add("row__nav");
@@ -99,5 +101,26 @@
       menu_div.classList.add(addAnime);
       menu_div.classList.remove(removeAnime);
       body.style.overflowY = overflow;
+
+      if(overflow == 'hidden'){
+        for(let i = 0; i < m__links.length; i++){
+
+          m__links[i].style.animationDelay = i/m__links.length+"s";
+          m__links[i].classList.add('anime__link');
+
+        }
+      }else{
+
+        for(let i = 0; i < m__links.length; i++){
+
+          // m__links[i].classList.add('anime__link');
+          setTimeout(()=>{
+            m__links[i].classList.remove('anime__link');
+
+          },100)
+
+        }
+
+      }
 
     }
