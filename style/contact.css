@@ -1,6 +1,7 @@
 main{
   display: relative;
   margin-top: 200px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-fqa,
@@ -58,7 +59,7 @@ main{
   width: 40%;
 }
 .social-icon {
-  background: rgba(207, 179, 52, 0.829);
+  background: #c1a87d;
   border: 0;
   border-radius: 10px;
   padding: 50px 80px;
@@ -107,6 +108,7 @@ main{
   width: 90%;
   border: 0;
   padding: 10px;
+  outline: none;
 }
 .contact-form div:not(:last-child) {
   margin: 50px 0;
@@ -122,12 +124,12 @@ main{
   font-weight: bold;
   border: 0;
   border-radius: 6px;
-  background: rgba(207, 179, 52, 0.829);
+  background: #c1a87d;
   color: white;
   cursor: pointer;
 }
 .form-btn button:hover {
-  background: rgba(194, 163, 23, 0.829);
+  background: rgba(197,149,65);
 }
 /* CONTACT FORM END*/
 
@@ -148,6 +150,11 @@ main{
 .fqa > p {
   font-size: 18px;
   padding: 15px 0;
+}
+.fqa > p:hover{
+  cursor: pointer;
+  color: #c1a87d;
+
 }
 .collapse-btn {
   float: right;
