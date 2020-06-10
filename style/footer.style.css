@@ -67,7 +67,7 @@ color:white;
 margin-top:20px;
 }
 #foot-btn:hover{
-    background: rgb(197, 149, 65); 
+    background: rgb(197, 149, 65);
     font-size: 19px;
 }
 #foot-email{
@@ -88,8 +88,12 @@ margin-top:20px;
     background-color: transparent;
     width:200px;
     color:white;
-    transition: 1s;
     margin-top: 10px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 .foot-info-box{
     margin-top:20px;
@@ -138,11 +142,19 @@ font-size:calc(1em + 1vh);
     width:30px;
     height:30px;
     background: white;
-    border-radius: 50%;
     color:#333333;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 #foot-fb:hover,#foot-tw:hover,#foot-inst:hover{
-   transform:scale(1.2)
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 .foot-last{
     display:flex;
@@ -154,9 +166,12 @@ font-size:calc(1em + 1vh);
     margin-top:0px;
 }
 .foot-scale{
-    transform: scale(.75);
     transform-origin: 50% 40%;
-
+    transform: scale(.75);
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    -ms-transform: scale(.75);
+    -o-transform: scale(.75);
 }
 @media(min-width:1400px){
     #foot-svg{
@@ -206,7 +221,7 @@ font-size:calc(1em + 1vh);
         margin:auto !important;
         text-align: center;
         padding-top:20px;
-        
+
     }
     .foot-service{
         display:none;
@@ -227,7 +242,7 @@ font-size:calc(1em + 1vh);
 
 }
 @media (max-width:347px){
-    
+
 }
 @media (max-width:745px){
     .footer{

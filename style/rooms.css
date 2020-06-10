@@ -143,6 +143,10 @@ font-size: 18px;
   align-items: center;
   border-radius: 50%;
   transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
 }
 
 .pagination-link:hover{
@@ -273,6 +277,10 @@ footer{
     align-items: center;
     border-radius: 50%;
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .pagination-link:hover {
@@ -374,7 +382,11 @@ footer{
 
   .room-filter{
     transform: translateX(-20px);
-  }
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+}
 }
 
 /*
