@@ -1,6 +1,6 @@
 main{
     position: relative;
-    top: 16rem;
+    top: 2rem;
     font-family: Poppins, sans-serif;
 }
 
@@ -56,15 +56,6 @@ input, select{
     border-radius: 5px;
     width: 250px;
 }
-
-.search input {
-    border-bottom: 1px solid #E5E5E5;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-}
-
 
 .gallery{
   display: flex;
