@@ -50,8 +50,7 @@ cursor: pointer;
 .comp-breakfast, 
 .cocktail, 
 .city-tour {
-border: 1px solid brown;
-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .airport-pickup > div,
