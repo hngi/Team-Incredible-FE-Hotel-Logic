@@ -71,7 +71,7 @@ main{
 .phone-icon span:first-child,
 .email-icon span:first-child {
   margin-right: 20px;
-  color: black;
+  color: white;
 }
 .fb-tw-inst {
   display: flex;
