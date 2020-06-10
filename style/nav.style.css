@@ -657,7 +657,7 @@ font-family: Poppins;
 .navbar .nav__items__links{
   width: 100%;
   font-size: 0.85rem;
-  transform: translateX(15px);
+  transform: translateX(25px);
 }
 
 .nav__abs .nav__items__links{
