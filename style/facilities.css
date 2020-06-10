@@ -153,17 +153,36 @@ main{
 
 @media screen and (max-width:700px) {
 
+    .container {
+        width: 88%;
+    }
+
+    .page-title {
+        margin: 150px 0 0 0;
+    }
+
     .page-title p {
         width: 100%;
+        font-size: 18px;
     }
     .facility {
         margin-bottom: 10px;
+        width: 300px;
+        padding-top: 250px;;
     }
 
    #facilities .d-flex {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .events {
+        padding-top: 210px;
+    }
+
+    main {
+        top: 0;
     }
 
     #facilities-icon .icon-box{
