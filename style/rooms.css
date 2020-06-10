@@ -33,6 +33,7 @@
     width: 15%;
     /* background: blue */
 }
+
 #check-in,
 #check-out,
 #room-number,
@@ -40,6 +41,7 @@
     padding: 5px 10px;
     border: 1px solid rgba(128, 95, 3, 0.404);
     border-radius: 5px;
+    width: 250px;
 }
 
 .search input {
@@ -47,7 +49,7 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 100px;
+    width: 100%;
 }
 
 .search input::placeholder {
@@ -63,12 +65,14 @@
 
 /* ############ RROMS STYLES FOR MOBILE STARTS HERE  ################################## */
 .room-default h5 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     text-transform: capitalize;
     font-family: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
     padding-top: 10px;
     font-size: 14px;
-    color: #333333
+    color: #333333;
+    width: 100px;
+    padding-bottom: 5px
 }
 
 .room-default select {
@@ -125,7 +129,7 @@
 
 .room h5 {
     font-weight: 500;
-    font-size: 29px;
+    font-size: 24px;
     line-height: 43px;
     text-align: center;
     color: #333333;
@@ -162,18 +166,18 @@
 }
 
 /* PAGINATION STARTS HERE */
-.pagination-container{
+.pagination-container {
     margin-bottom: 20rem;
-  }
-  
-  .pagination{
+}
+
+.pagination {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: baseline;
-  }
-  
-  .pagination-link{
+}
+
+.pagination-link {
     height: 40px;
     width: 40px;
     padding: .5rem;
@@ -187,26 +191,26 @@
     align-items: center;
     border-radius: 50%;
     transition: all .3s linear;
-  }
-  
-  .pagination-link:hover{
+}
+
+.pagination-link:hover {
     color: #FFF !important;
     background-color: #C1A87D;
-  }
-  
-  .pglink-active{
+}
+
+.pglink-active {
     color: #FFF;
     background-color: #C1A87D;
-  }
-  
-  .control{
+}
+
+.control {
     color: #333;
     margin: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+
 /* PAGINATION ENDS HERE */
 /* ############ ROOMS STYLES FOR MOBILE ENDS HERE  ################################## */
 /* ############ ALL STYLES FOR DESKTOP AND TABLETS STARTS HERE  ################################## */
@@ -238,10 +242,19 @@
 
     .room-default select {
         width: 150px;
+        border: 1px solid blue;
     }
 
     .search input {
         padding-top: 30px;
+        width: 150px;
+    }
+
+    #check-in,
+    #check-out,
+    #room-number,
+    #guests {
+        width: 150px;
     }
 
     p.slogan {
