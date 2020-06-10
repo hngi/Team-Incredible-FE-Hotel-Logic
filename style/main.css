@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 50px 0;
+  padding: 10px 0 40px 0;
 }
 .service-head,
 .event-head, 
@@ -45,6 +45,14 @@
   cursor: pointer;
 }
 
+.airport-pickup, 
+.comp-breakfast, 
+.cocktail, 
+.city-tour {
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+
 .airport-pickup > div,
 .comp-breakfast > div,
 .cocktail > div,
@@ -53,11 +61,12 @@
   justify-content: center;
   padding-bottom: 10px;
   width: 60%;
+  text-align: center;
 }
 
 .room-suites-wrapper > div {
   width: 47%;
-  height: 400px;
+  height: 450px;
 }
 .event-wrapper > div {
   width: 30%;
@@ -71,10 +80,11 @@
 }
 .room > div{
   width: 100%;
-  height: 180px;
-  margin-bottom: 40px;
+  height: 214px;
+  margin-bottom: 20px;
   border: 1px solid #d6d2d2;
   border-radius: 15px;
+  box-sizing: border-box;
 
 }
 .deal-wrapper {
