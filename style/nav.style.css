@@ -134,7 +134,7 @@ body{
 .navbar.other__pages h1.logo__name,
 .navbar.other__pages .slogan
 .navbar.home__page.row__nav,
-.navbar.home__page.row__nav a:link,
+.navbar.home__page.row__nav a:link
 {
     color: #333333;
 }
