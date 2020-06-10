@@ -224,12 +224,12 @@ padding: 7px 15px;
 font-size: 20px;
 border: 0;
 color: white;
-background: rgb(189, 166, 63);
+background: rgb(197, 149, 65); 
 border-radius: 5px;
 cursor: pointer;
 }
 .subscribe-form button:hover {
-background: rgb(168, 148, 55);
+background: rgb(180, 136, 60); 
 }
 
 .partners-head h2,
