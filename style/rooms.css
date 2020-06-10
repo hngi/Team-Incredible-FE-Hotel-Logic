@@ -40,9 +40,9 @@ input, select{
 }
 
 .room{
-    border: 1px solid black;
+    border: 1px solid #E5E5E5;
     border-radius: 20px;
-    padding: .1rem;
+    padding: .0.2rem 0.1rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -51,8 +51,33 @@ input, select{
 }
 
 .room img {
-  max-width: 100%;
+  max-width: 95%;
   border-radius: 20px;
+  padding-top: 0.2rem;
+}
+
+.room__type{
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: #999999;
+padding-top: .5rem;
+}
+
+.room__price{
+font-style: normal;
+font-weight: 500;
+font-size: 29px;
+color: #333;
+padding: .5rem 0;
+}
+
+.room__price small{
+  color: #999999;
+  font-style: normal;
+font-weight: normal;
+font-size: 18px;
 }
 
 .pagination{
@@ -91,7 +116,6 @@ input, select{
 .control{
   color: #333;
   margin: 0.5rem;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
