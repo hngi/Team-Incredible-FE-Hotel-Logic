@@ -110,121 +110,109 @@
                      Body contents begins
 
     ------------------------------------------->
-  <main class="room-container">
-    <!-- ############### filter and inputs goes here######### -->
-    <form class="room-filter">
-      <!-- TODO: Change to form -->
-      <div class="search">
-        <input type="text" placeholder="filter search">
-      </div>
-      <!-- <div class="room-options"> -->
-      <div class="room-default room-check-in">
-        <h5>Check in</h5>
-        <input type="date" name="check-in" value="2020-06-12" min="2020-06-12">
-      </div>
-      <div class="room-default room-check-out">
-        <h5>Check out</h5>
-        <input type="date" name="check-out" value="2020-06-12" min="2020-06-12">
-      </div>
-      <div class="room-default room-number">
-        <h5>rooms</h5>
-        <select name="room-number" id="room-number">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-        </select>
-      </div>
-      <div class="room-default guest">
-        <h5>guests</h5>
-        <select name="guests" id="guests">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-        </select>
-      </div>
-      <!-- </div> -->
-    </form>
-    <!-- ##### room-sub-container contains all three rooms in a single row################ -->
-    <div class="sub-cont room-sub-container-1">
-      <!-- ##### room-(n) contains room details, img, price and tag################ -->
-      <div class="room room-1a">
-        <img src="./assets/images/Rectangle 12.png" alt="room-1a">
-        <p>twin bed deluxe</p>
-        <h5>#17000 <span>/night</span></h5>
-      </div>
-      <div class="room room-1b">
-        <img src="./assets/images/Rectangle 13.png" alt="room-1b">
-        <p>golden luxury deluxe</p>
-        <h5>#20000 <span>/night</span></h5>
-      </div>
-      <div class="room room-1c">
-        <img src="./assets/images/Rectangle 14.png" alt="room-1c">
-        <p>golden luxury deluxe</p>
-        <h5>#16000 <span>/night</span></h5>
+
+
+  <main>
+    <div class="form-container">
+      <form name="filter-form" class="filter-form">
+        <label>
+          <!-- FILTER SEARCH -->
+          <input type="text" placeholder="Filter search" class="search-input-filter">
+        </label>
+        <label>
+          CHECK-IN
+          <input type="date" name="check-in" id="">
+        </label>
+        <label>
+          CHECK-OUT
+          <input type="date" name="check-out" id="">
+        </label>
+        <label>
+          ROOMS
+          <select name="numOfRooms" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </label>
+        <label>
+          GUESTS
+          <select name="numOfGuests" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </label>
+      </form>
+    </div>
+
+    <div class="gallery-container">
+      <div class="gallery">
+        <div class="room">
+          <div class="img-container">
+            <img src="./assets/images/bed-bedroom-1.jpg" alt="">
+          </div>
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-2.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-1.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-3.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-4.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-5.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-4.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-1.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-2.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-3.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-4.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-5.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">N17000<small>/night</small></p>
+        </div>
       </div>
     </div>
-    <div class="sub-cont room-sub-container-2">
-      <div class="room room-2a">
-        <img src="./assets/images/Rectangle 15.png" alt="room-2a">
-        <p>luxury suite</p>
-        <h5>#42000 <span>/night</span></h5>
-      </div>
-      <div class="room room-2b">
-        <img src="./assets/images/Rectangle 16.png" alt="room-2b">
-        <p>twin bed deluxe</p>
-        <h5>#12000 <span>/night</span></h5>
-      </div>
-      <div class="room room-2c">
-        <img src="./assets/images/Rectangle 18.png" alt="room-2c">
-        <p>luxury suite</p>
-        <h5>#34000 <span>/night</span></h5>
-      </div>
-    </div>
-    <div class="sub-cont room-sub-container-3">
-      <div class="room room-3a">
-        <img src="./assets/images/Rectangle 19.png" alt="room-3a">
-        <p>twin bed deluxe</p>
-        <h5>#17000 <span>/night</span></h5>
-      </div>
-      <div class="room room-3b">
-        <img src="./assets/images/Rectangle 20.png" alt="room-3b">
-        <p>golden luxury deluxe</p>
-        <h5>#20000 <span>/night</span></h5>
-      </div>
-      <div class="room room-3c">
-        <img src="./assets/images/Rectangle 21.png" alt="room-3c">
-        <p>golden luxury deluxe</p>
-        <h5>#16000 <span>/night</span></h5>
-      </div>
-    </div>
-    <div class="sub-cont room-sub-container-4">
-      <div class="room room-4a">
-        <img src="./assets/images/Rectangle 21.png" alt="room-4a">
-        <p>luxury suite</p>
-        <h5>#34000 <span>/night</span></h5>
-      </div>
-      <div class="room room-4b">
-        <img src="./assets/images/Rectangle 22.png" alt="room-4b">
-        <p>luxury suite</p>
-        <h5>#42000 <span>/night</span></h5>
-      </div>
-      <div class="room room-4c">
-        <img src="./assets/images/Rectangle 23.png" alt="room-4c">
-        <p>twin bed deluxe</p>
-        <h5>#12000 <span>/night</span></h5>
-      </div>
-    </div>
-    <!-- ##### pagination for rooms start ################ -->
+    <!-- End of gallery container -->
     <div class="pagination-container">
       <div class="pagination-wrapper">
         <img src="https://img.icons8.com/ios-glyphs/30/000000/arrow-pointing-left--v2.png" class="pagination-icon" />
@@ -245,6 +233,8 @@
 
 
 
+  </div>
+  </main>
 
 
 
