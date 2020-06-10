@@ -1,7 +1,10 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 a,
@@ -96,17 +99,6 @@ a:hover{
   font-weight: normal;
   line-height: 45px;
   font-size: 20px;
-}
-
-@keyframes shadow{
-   0% {box-shadow: 0px 0px 0px #333333;}
-   25% {box-shadow: 0 0 0 5px #ab8e61;}
-   50% {box-shadow: 0 0 0 5px #C1A87D,
-                    0 0 0 10px #c7b68b}
-   75% {box-shadow: 0 0 0 5px #c7b68b,
-                    0 0 0 10px #C1A87D,
-                    0 0 0 15px #ab8e61;}
-   100% {box-shadow: 0px 0px 0px #333333;}
 }
 
 
@@ -255,7 +247,7 @@ margin-top: 5px;
 {
   color:#C1A87D;
 } */
-
+/*
 .navbar .profile{
   display: flex;
   justify-content: space-evenly;
@@ -272,8 +264,8 @@ margin-top: 5px;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-}
-
+} */
+/*
 #mobile__items .profile__name{
   font-size: 1.3rem;
 }
@@ -288,13 +280,13 @@ margin-top: 5px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
-#mobile__items .profile__dp{
+/* #mobile__items .profile__dp{
   width: 70px;
   height: 70px;
   margin-bottom: 5px;
-}
+} */
 
 
 .btn__nemu{
@@ -391,8 +383,24 @@ text-align: center;
 color: #FFFFFF;
 margin: 0;
 }
+
+
+.hero__text:nth-of-type(1){
+  opacity: 0;
+  animation-timing-function: linear;
+  animation-name: hero-heading-animate;
+  animation-duration: 0.45s;
+  animation-fill-mode: forwards;
+}
+
 .hero__text:nth-of-type(2){
+  opacity: 0;
   margin-left: 20px;
+  animation-timing-function: linear;
+  animation-name: hero-heading-animate;
+  animation-duration: 0.45s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 #hero__btn{
   width: 142px;
@@ -420,6 +428,13 @@ margin: 0;
   order: 0;
   align-self: center;
   margin: 10px 0px;
+
+  opacity: 0;
+  animation-timing-function: linear;
+  animation-name:  hero-button-animate;
+  animation-duration: 0.45s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
   }
 /**************************************************
 
@@ -444,16 +459,16 @@ margin: 0;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 100px;
 }
-.divider{
+/* .divider{
   width: 80%;
   height: 3px;
   background: #fff;
   border-radius: 100%;
   box-shadow: 0 0 5px #ccc;
   margin-top: 20px;
-}
+} */
 
 #mobile__links{
   display: flex;
@@ -468,6 +483,16 @@ margin: 0;
 font-family: Poppins;
 }
 
+
+.anime__link{
+  opacity: 0;
+  animation-timing-function: linear;
+  animation-name: hero-heading-animate;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 0.5s; */
+}
+
 #mobile__links a:link{
   color: #fff;
 }
@@ -476,6 +501,58 @@ font-family: Poppins;
   margin-bottom: 40px;
 }
 
+
+
+@keyframes shadow{
+   0% {box-shadow: 0px 0px 0px #333333;}
+   25% {box-shadow: 0 0 0 5px #ab8e61;}
+   50% {box-shadow: 0 0 0 5px #C1A87D,
+                    0 0 0 10px #c7b68b}
+   75% {box-shadow: 0 0 0 5px #c7b68b,
+                    0 0 0 10px #C1A87D,
+                    0 0 0 15px #ab8e61;}
+   100% {box-shadow: 0px 0px 0px #333333;}
+}
+
+
+
+
+@keyframes hero-heading-animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  30% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes hero-button-animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  30% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes menu--list--anime-rev {
   0% {
@@ -565,12 +642,56 @@ font-family: Poppins;
 
 **************************************************/
 
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  /* body{
+    background: red;
+  } */
+
+.navbar .nav__items__links{
+  width: 100%;
+  font-size: 0.85rem;
+  transform: translateX(15px);
+}
+
+.nav__abs .nav__items__links{
+    transform: translate(-5px,10px);
+}
+
+.nav.nav__fixed h1.logo__name{
+  font-size: 1.3rem;
+}
+
+.hero__contents{
+  margin-left: 10px;
+}
+
+.hero__contents .hero__text{
+  font-size: 54px;
+}
+
+}
+
 /*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  .navbar.row__nav{
+    margin-top: 15px;
+  }
+
+   .navbar.col__nav{
+     margin-top: 10px;
+   }
 
   #nav_list{
     display: none;
@@ -778,6 +899,170 @@ weird phones like pixel2 iphone 6,7,8 with screen size between 411 and 414
   .btn__nemu span:nth-of-type(3){
     width: 30px;
   }
+
+}
+
+
+
+
+
+
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* body{background: red;} */
+
+  .navbar .nav__items__links{
+    width: 100%;
+    font-size: 1rem;
+    transform: translateX(20px);
+  }
+
+  p.slogan{
+    font-size: 1.1rem;
+  }
+
+  .nav__abs .nav__items__links{
+      transform: translate(5px,15px);
+      font-size: 1.1rem;
+  }
+
+  .nav.nav__fixed h1.logo__name{
+    font-size: 1.3rem;
+  }
+
+  .hero__contents{
+    margin-left: 10px;
+  }
+
+  .hero__contents .hero__text{
+    font-size: 54px;
+  }
+
+}
+
+
+
+
+/***********
+
+iPad pro
+*********/
+
+/* Portrait */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+
+
+      p.slogan{
+        font-size: 1.0rem;
+      }
+
+      .navbar .nav__items__links{
+        width: 80%;
+        font-size: 1.1rem;
+        transform: translateX(100px);
+      }
+
+      .nav__abs .nav__items__links{
+          transform: translate(80px,20px);
+      }
+
+      .navbar.row__nav{
+        margin-top: 10px;
+      }
+      .nav.nav__fixed h1.logo__name{
+        font-size: 1.8rem;
+      }
+
+      .hero__contents{
+        margin-left: 10px;
+      }
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    /* body{
+      background: red;
+    } */
+
+
+    p.slogan{
+      font-size: 1.1rem;
+    }
+
+    .navbar .nav__items__links{
+      width: 80%;
+      font-size: 1.3rem;
+      transform: translateX(170px);
+    }
+
+    .nav__abs .nav__items__links{
+        transform: translate(100px,20px);
+    }
+
+    .nav.nav__fixed h1.logo__name{
+      font-size: 2.2rem;
+    }
+
+
+    .nav.nav__abs h1.logo__name{
+      font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+
+  p.slogan{
+    font-size: 1.1rem;
+  }
+
+  .navbar .nav__items__links{
+    width: 80%;
+    font-size: 1.2rem;
+    transform: translateX(80px);
+  }
+
+  .nav__abs .nav__items__links{
+      transform: translate(80px,15px);
+  }
+
+  .nav.nav__fixed h1.logo__name{
+    font-size: 1.7rem;
+  }
+
+  .hero__contents{
+    margin-left: 10px;
+  }
+
+  .hero__contents .hero__text{
+    font-size: 60px;
+  }
+
 
 }
 
