@@ -158,6 +158,18 @@ font-size:calc(1em + 1vh);
     transform-origin: 50% 40%;
 
 }
+@media(min-width:1400px){
+    #foot-svg{
+        visibility: hidden;
+    }
+    .foot-head p{
+        padding-top:50px !important;
+    }
+    .foot-section1{
+        display: none;
+        visibility: hidden;
+    }
+}
 @media (max-width:500px){
     .foot-social{
         justify-content: space-around;
@@ -176,6 +188,7 @@ font-size:calc(1em + 1vh);
     }
     .footer{
         font-size: 13px;
+        margin-top:-50px;
     }
     .foot-list-head{
         font-size: 25px;

@@ -1,6 +1,6 @@
 main{
     position: relative;
-    top: 3rem;
+    top: 16rem;
     font-family: Poppins, sans-serif;
 }
 
@@ -17,20 +17,47 @@ main{
 }
 
 label{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #777777;
+  font-weight: normal;
+  font-size: smaller;
 }
 
 input, select{
+  border: 1px solid #33333312;
+  border-radius: 15px;
   height: 2rem;
 }
 
+<<<<<<< HEAD
 .search {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+=======
+@media screen and (max-width:500px ){
+  label {
+      padding: 2px;
+      align-items: normal;
+      width: -webkit-fill-available;
+      margin: 0 20%;
+  }
+}
+
+@media screen and (min-width:500px ){
+  .filter-form{
+      flex-flow: row wrap;
+  }
+  label{
+      flex-direction: row;
+  }
+  input, select{
+      margin-left: 5px;
+  }
+>>>>>>> bf2c82dff56492baa640685783edd65574f94050
 }
 
 .search,
@@ -186,7 +213,6 @@ footer{
 @media screen and (min-width:500px ){
   .room{
     flex-basis: 45%;
-    margin-top: 5rem;
   }
 }
 
