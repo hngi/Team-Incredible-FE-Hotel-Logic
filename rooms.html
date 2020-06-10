@@ -110,102 +110,109 @@
                      Body contents begins
 
     ------------------------------------------->
-  <div class="room-container">
-    <!-- ############### filter and inputs goes here######### -->
-    <div class="room-filter">
-      <div class="search">
-        <input type="text" placeholder="filter search">
-      </div>
-      <!-- <div class="room-options"> -->
-      <div class="room-default room-check-in">
-        <h5>check in</h5>
-        <input type="date" name="check-in" id="check-in">        
-      </div>
-      <div class="room-default room-check-out">
-        <h5>check out</h5>
-        <input type="date" name="check-out" id="check-out">        
-      </div>
-      <div class="room-default room-number">
-        <h5>rooms</h5>
-        <input type="number" name="room-number" id="room-number">        
-      </div>
-      <div class="room-default guest">
-        <h5>guests</h5>
-        <input type="number" name="guests" id="guests">        
-      </div>
-      <!-- </div> -->
+
+
+  <main>
+    <div class="form-container">
+      <form name="filter-form" class="filter-form">
+        <label>
+          <!-- FILTER SEARCH -->
+          <input type="text" placeholder="Filter search" class="search-input-filter">
+        </label>
+        <label>
+          CHECK-IN
+          <input type="date" name="check-in" id="">
+        </label>
+        <label>
+          CHECK-OUT
+          <input type="date" name="check-out" id="">
+        </label>
+        <label>
+          ROOMS
+          <select name="numOfRooms" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </label>
+        <label>
+          GUESTS
+          <select name="numOfGuests" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </label>
+      </form>
     </div>
-    <!-- ##### room-sub-container contains all three rooms in a single row################ -->
-    <div class="sub-cont room-sub-container-1">
-      <!-- ##### room-(n) contains room details, img, price and tag################ -->
-      <div class="room room-1a">
-        <img src="./assets/images/Rectangle 12.png" alt="room-1a">
-        <p>twin bed deluxe</p>
-        <h5>#17000 <span>/night</span></h5>
-      </div>
-      <div class="room room-1b">
-        <img src="./assets/images/Rectangle 13.png" alt="room-1b">
-        <p>golden luxury deluxe</p>
-        <h5>#20000 <span>/night</span></h5>
-      </div>
-      <div class="room room-1c">
-        <img src="./assets/images/Rectangle 14.png" alt="room-1c">
-        <p>golden luxury deluxe</p>
-        <h5>#16000 <span>/night</span></h5>
-      </div>
-    </div>
-    <div class="sub-cont room-sub-container-2">
-      <div class="room room-2a">
-        <img src="./assets/images/Rectangle 15.png" alt="room-2a">
-        <p>luxury suite</p>
-        <h5>#42000 <span>/night</span></h5>
-      </div>
-      <div class="room room-2b">
-        <img src="./assets/images/Rectangle 16.png" alt="room-2b">
-        <p>twin bed deluxe</p>
-        <h5>#12000 <span>/night</span></h5>
-      </div>
-      <div class="room room-2c">
-        <img src="./assets/images/Rectangle 18.png" alt="room-2c">
-        <p>luxury suite</p>
-        <h5>#34000 <span>/night</span></h5>
-      </div>
-    </div>
-    <div class="sub-cont room-sub-container-3">
-      <div class="room room-3a">
-        <img src="./assets/images/Rectangle 19.png" alt="room-3a">
-        <p>twin bed deluxe</p>
-        <h5>#17000 <span>/night</span></h5>
-      </div>
-      <div class="room room-3b">
-        <img src="./assets/images/Rectangle 20.png" alt="room-3b">
-        <p>golden luxury deluxe</p>
-        <h5>#20000 <span>/night</span></h5>
-      </div>
-      <div class="room room-3c">
-        <img src="./assets/images/Rectangle 21.png" alt="room-3c">
-        <p>golden luxury deluxe</p>
-        <h5>#16000 <span>/night</span></h5>
-      </div>
-    </div>
-    <div class="sub-cont room-sub-container-4">
-      <div class="room room-4a">
-        <img src="./assets/images/Rectangle 21.png" alt="room-4a">
-        <p>luxury suite</p>
-        <h5>#34000 <span>/night</span></h5>
-      </div>
-      <div class="room room-4b">
-        <img src="./assets/images/Rectangle 22.png" alt="room-4b">
-        <p>luxury suite</p>
-        <h5>#42000 <span>/night</span></h5>
-      </div>
-      <div class="room room-4c">
-        <img src="./assets/images/Rectangle 23.png" alt="room-4c">
-        <p>twin bed deluxe</p>
-        <h5>#12000 <span>/night</span></h5>
+
+    <div class="gallery-container">
+      <div class="gallery">
+        <div class="room">
+          <div class="img-container">
+            <img src="./assets/images/bed-bedroom-1.jpg" alt="">
+          </div>
+          <p class="room__type">Luxury Suite</p>
+          <p class="room__price">₦30,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-2.jpg" alt="">
+          <p class="room__type">Economy++</p>
+          <p class="room__price">₦19,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-1.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">₦14,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-3.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">₦17,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-4.jpg" alt="">
+          <p class="room__type">Exquisite</p>
+          <p class="room__price">₦21,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-5.jpg" alt="">
+          <p class="room__type">Exclusive+</p>
+          <p class="room__price">₦17,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-4.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">₦17,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-1.jpg" alt="">
+          <p class="room__type">Charlemagne</p>
+          <p class="room__price">₦17,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-2.jpg" alt="">
+          <p class="room__type">Luxury Suite</p>
+          <p class="room__price">40,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-3.jpg" alt="">
+          <p class="room__type">Twin Bed Deluxe</p>
+          <p class="room__price">₦35,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-4.jpg" alt="">
+          <p class="room__type">Golden Deluxe</p>
+          <p class="room__price">₦45,000<small>/night</small></p>
+        </div>
+        <div class="room">
+          <img src="./assets/images/bed-bedroom-5.jpg" alt="">
+          <p class="room__type">Exclusive Luxury</p>
+          <p class="room__price">₦50,000<small>/night</small></p>
+        </div>
       </div>
     </div>
-    <!-- ##### pagination for rooms start ################ -->
+    <!-- End of gallery container -->
     <div class="pagination-container">
       <div class="pagination">
         <a href="#" class="control"><span>&#8592; </span> prev</a>
@@ -216,14 +223,7 @@
       </div>
     </div>
     <!-- ##### pagination for rooms ends ################ -->
-  </div>
-
-
-
-
-
-
-
+  </main>
 
 
 
