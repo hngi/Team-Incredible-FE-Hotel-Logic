@@ -52,6 +52,13 @@ main{
     padding: 300px 10px 0 25px;
 }
 
+#facilities .d-flex {
+         flex-wrap: wrap;
+         display: flex;
+         justify-content: space-evenly;
+    }
+
+
 .facility:hover {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -125,16 +132,28 @@ main{
     justify-content: space-between;
 }
 
-@media screen and (max-width:960px) {
 
-    /* .nav__items__links {
 
-    } */
+@media screen and (min-width:920px)  {
+    .facility {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:720px) {
+  
+
+    .facility {
+        width: 320px;
+        padding: 270px 0 24px 25px;
+    }
+
+    .events {
+        padding: 250px 0 24px 25px;
+    }
 
      #facilities .d-flex {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+         flex-wrap: wrap;
     }
 
     #facilities-icon .icon-box{
@@ -149,9 +168,21 @@ main{
     .page-title p {
         width: 70%;
     }
+
+    .icon-box {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 30px;
+    }
 }
 
-@media screen and (max-width:700px) {
+/* @media screen and (min-width:600px)       {
+    .facility {
+        width: 30px;
+    }
+} */
+
+@media screen and (max-width:600px) {
 
     .container {
         width: 88%;
@@ -167,8 +198,8 @@ main{
     }
     .facility {
         margin-bottom: 10px;
-        width: 300px;
-        padding-top: 250px;;
+        width: 350px;
+        padding-top: 250px;
     }
 
    #facilities .d-flex {
@@ -195,5 +226,6 @@ main{
     }
     .icon-box {
         margin-bottom: 40px;
+        width: 200px
     }
 }
