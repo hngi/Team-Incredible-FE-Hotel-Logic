@@ -91,6 +91,25 @@ margin-top:20px;
     transition: 1s;
     margin-top: 10px;
 }
+#footer-email{
+    text-decoration: none;
+    outline:none;
+    background-color: transparent;
+    width:200px;
+    color:white;
+    transition: 1s;
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid white;
+}
+#footer-email:focus{
+    border-bottom: 2.5px solid whitesmoke;
+}
+#footer-email:focus{
+  width:220px;
+}
 .foot-info-box{
     margin-top:20px;
 }

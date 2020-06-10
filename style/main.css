@@ -321,7 +321,7 @@ margin-top: 200px;
      margin-top:-140px;
    }
    .test-map{
-    padding-top:0px !important;
+    margin-bottom:70px !important;
     
   }
 }
@@ -351,6 +351,9 @@ margin-top: 200px;
 @media (max-width:800px){
   .map-img{
     width:9vh;
+  }
+  .test-map{
+    margin-bottom: 50px;
   }
 }
 
