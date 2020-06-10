@@ -32,32 +32,10 @@ input, select{
   height: 2rem;
 }
 
-<<<<<<< HEAD
 .search {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-=======
-@media screen and (max-width:500px ){
-  label {
-      padding: 2px;
-      align-items: normal;
-      width: -webkit-fill-available;
-      margin: 0 20%;
-  }
-}
-
-@media screen and (min-width:500px ){
-  .filter-form{
-      flex-flow: row wrap;
-  }
-  label{
-      flex-direction: row;
-  }
-  input, select{
-      margin-left: 5px;
-  }
->>>>>>> bf2c82dff56492baa640685783edd65574f94050
 }
 
 .search,
