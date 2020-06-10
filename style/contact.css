@@ -1,6 +1,6 @@
 main{
   display: relative;
-  margin-top: 200px;
+  margin-top: 180px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -12,7 +12,7 @@ main{
   justify-content: center;
 }
 .costumer-rep {
-  padding-bottom: 50px;
+  padding-bottom: 120px;
 }
 .contact-fqa,
 .contact-us{
@@ -119,11 +119,11 @@ main{
   justify-content: center;
 }
 .form-btn button {
-  padding: 10px 20px;
+  padding: 16px 40px;
   font-size: 18px;
   font-weight: bold;
   border: 0;
-  border-radius: 6px;
+  border-radius: 20px;
   background: #c1a87d;
   color: white;
   cursor: pointer;
@@ -143,6 +143,7 @@ main{
   overflow: hidden;
 }
 .contact-fqa h1 {
+  margin-top: 100px;
   text-align: center;
   font-size: 2rem;
   padding: 30px 0;
@@ -151,7 +152,8 @@ main{
   font-size: 18px;
   padding: 15px 0;
 }
-.fqa > p:hover{
+.fqa > p:hover,
+.fqa > p:hover::after{
   cursor: pointer;
   color: #c1a87d;
 
