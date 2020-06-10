@@ -80,6 +80,10 @@ font-weight: normal;
 font-size: 18px;
 }
 
+.pagination-container{
+  margin-bottom: 20rem;
+}
+
 .pagination{
   display: flex;
   flex-flow: row nowrap;
