@@ -245,9 +245,8 @@
     padding: 20px 0;
   }
   .room-suites-wrapper > div,
-  .event-wrapper > div,
-  .service-wrapper > div {
-    /* width: 90%; */
+  .event-wrapper > div{
+    width: 90%;
     margin-bottom: 25px;
   }
   .service-wrapper {
