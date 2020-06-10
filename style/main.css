@@ -1,13 +1,228 @@
 * {
-    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
   
   body {
-    margin: 0;
-    padding: 0;
     background: #ffffff;
     font-family: "Poppins", sans-serif;
   }
+
+.services,
+.enjoy-deal, 
+.upcoming-event,
+.room-suites {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.service-head,
+.event-head, 
+.room-suites-head {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+.event-wrapper, 
+.room-suites-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.service-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.service-wrapper > div {
+  width: 20%;
+  cursor: pointer;
+}
+
+.airport-pickup > div,
+.comp-breakfast > div,
+.cocktail > div,
+.city-tour > div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  width: 60%;
+}
+
+.room-suites-wrapper > div {
+  width: 47%;
+  height: 400px;
+}
+.event-wrapper > div {
+  width: 30%;
+  height: 300px;
+  border-radius: 15px;
+  border: 1px solid #d6d2d2;
+}
+.suites {
+  border: 1px solid #d6d2d2;
+  border-radius: 15px;
+}
+.room > div{
+  width: 100%;
+  height: 180px;
+  margin-bottom: 40px;
+  border: 1px solid #d6d2d2;
+  border-radius: 15px;
+
+}
+.deal-wrapper {
+  width: 50%;
+}
+.golf-tour {
+  background: url('../assets/images/home/golf-court-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.party-event {
+  background: url('../assets/images/home/cocktail-image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.event-conf {
+  background: url('../assets/images/home/conf-meeting.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.suites {
+  background: url('../assets/images/home/hotel-suites.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.room-1 {
+  background: url('../assets/images/home/hotel-room1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.room-2 {
+  background: url('../assets/images/home/hotel-room2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.deal-wrapper > div {
+  padding: 10px 0;
+}
+.deal-text > p {
+  line-height: 2;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.subscribe-form > div {
+  display: flex;
+  width: 60%;
+}
+.subscribe-form input {
+  padding: 5px 10px;
+  border: 0;
+  border-bottom: 1px solid #c9c9c9;
+  margin-right: 10px;
+  width: 100%;
+  font-size: 20px;
+}
+.subscribe-form input::placeholder {
+  color: gray;
+  opacity: 0.4;
+}
+.subscribe-form button {
+  width: 120px;
+  padding: 7px 15px;
+  font-size: 20px;
+  border: 0;
+  color: white;
+  background: rgb(189, 166, 63);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.subscribe-form button:hover {
+  background: rgb(168, 148, 55);
+}
   
-  
+.partners-head h2,
+.deal-head h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+.our-partners {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px 30px;
+}
+
+@media screen and (max-width: 870px) {
+  .airport-pickup > div,
+  .comp-breakfast > div,
+  .cocktail > div,
+  .city-tour > div {
+    width: 90%;
+  }
+  .services, .room-suites {
+    padding: 20px 0;
+  }
+  .room-suites-wrapper > div,
+  .event-wrapper > div,
+  .service-wrapper > div {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+  .airport-pickup,
+.comp-breakfast,
+.cocktail,
+.city-tour {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  width: 100%;
+}
+  .service-wrapper {
+    justify-content: center;
+  }
+  .our-partners > div {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 90%;
+  }
+  .enjoy-deal {
+    padding: 20px 0;
+  }
+  .deal-wrapper,
+  .subscribe-form > div {
+    width: 90%;
+  }
+  .deal-head h2 {
+    font-size: 1.3rem;
+  }
+  .subscribe-form input {
+    width: 60%;
+    font-size: 16px;
+  }
+  .subscribe-form button {
+    padding: 5px 10px;
+    width: 100px;
+    font-size: 16px;
+  }
+}
