@@ -226,6 +226,52 @@ footer{
     }
 }
 
+/* PAGINATION STARTS HERE */
+.pagination-container{
+    margin-bottom: 20rem;
+  }
+  
+  .pagination{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .pagination-link{
+    height: 40px;
+    width: 40px;
+    padding: .5rem;
+    display: inline-block;
+    text-align: center;
+    background-color: #EEE;
+    color: #333;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .3s linear;
+  }
+  
+  .pagination-link:hover{
+    color: #FFF !important;
+    background-color: #C1A87D;
+  }
+  
+  .pglink-active{
+    color: #FFF;
+    background-color: #C1A87D;
+  }
+  
+  .control{
+    color: #333;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 /* PAGINATION ENDS HERE */
 /* ############ ROOMS STYLES FOR MOBILE ENDS HERE  ################################## */
 /* ############ ALL STYLES FOR DESKTOP AND TABLETS STARTS HERE  ################################## */
