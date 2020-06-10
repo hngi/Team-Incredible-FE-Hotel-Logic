@@ -1,28 +1,36 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
+main{
+    position: relative;
+    top: 3rem;
+    font-family: Poppins, sans-serif;
 }
 
-.room-body {
-    background: #E5E5E5
+.form-container{
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-.room-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #FFFFFF
+.filter-form{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* ############### FILTER AND INPUT ROOMS STYLE */
-.room-filter {
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-right: 50px;
-    display: inline-block;
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input, select{
+  height: 2rem;
+}
+
+.search {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
 
 .search,
@@ -33,6 +41,7 @@
     width: 15%;
     /* background: blue */
 }
+
 #check-in,
 #check-out,
 #room-number,
@@ -40,6 +49,7 @@
     padding: 5px 10px;
     border: 1px solid rgba(128, 95, 3, 0.404);
     border-radius: 5px;
+    width: 250px;
 }
 
 .search input {
@@ -47,133 +57,205 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 100px;
+    width: 100%;
 }
 
-.search input::placeholder {
-    text-transform: capitalize;
+
+.gallery{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items:stretch;
+  margin: 0 10%;
 }
 
-.search,
-.room-options {
-    display: inline-block;
+.room{
+    border: 1px solid #E5E5E5;
+    border-radius: 20px;
+    padding: .0.2rem 0.1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
 }
 
-/* ############ INPUT STYLES END ################################## */
+.room img {
+  max-width: 95%;
+  border-radius: 20px;
+  padding-top: 0.2rem;
+}
 
 /* ############ RROMS STYLES FOR MOBILE STARTS HERE  ################################## */
 .room-default h5 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     text-transform: capitalize;
     font-family: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
     padding-top: 10px;
     font-size: 14px;
-    color: #333333
-}
-
-.room-default select {
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    border-radius: 10px;
+    color: #333333;
     width: 100px;
-    height: 30px;
-    text-align: center;
+    padding-bottom: 5px
 }
 
-.room-default select option {
-    text-align: center;
+.room__price{
+font-style: normal;
+font-weight: 500;
+font-size: 29px;
+color: #333;
+padding: .5rem 0;
 }
 
-.sub-cont {
-    margin: 40px 10px;
+.room__price small{
+  color: #999999;
+  font-style: normal;
+font-weight: normal;
+font-size: 18px;
 }
 
-.room {
-    width: 310px;
-    height: 460px;
-    text-align: center;
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    box-sizing: border-box;
-    border-radius: 20px;
-    padding: 0 0 20px 0;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
+.pagination-container{
+  margin-bottom: 20rem;
 }
 
-.room img {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
+.pagination{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
 }
 
-.room p,
-.room span {
-    font-family: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    color: #999999;
-    margin-top: 10px
+.pagination-link{
+  height: 40px;
+  width: 40px;
+  padding: .5rem;
+  display: inline-block;
+  text-align: center;
+  background-color: #EEE;
+  color: #333;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all .3s linear;
 }
 
-.room p {
-    text-transform: capitalize;
+.pagination-link:hover{
+  color: #FFF !important;
+  background-color: #C1A87D;
+}
+
+.pglink-active{
+  color: #FFF;
+  background-color: #C1A87D;
 }
 
 .room h5 {
     font-weight: 500;
-    font-size: 29px;
+    font-size: 24px;
     line-height: 43px;
     text-align: center;
     color: #333333;
     padding-bottom: 20px;
 }
 
-.room p,
-.room h5 {
-    padding-top: 20px;
-    text-align: left;
-    padding-left: 40px;
+footer{
+  margin-top: 10rem;
 }
 
-.room-sub-container-1,
-.room-sub-container-2,
-.room-sub-container-3,
-.room-sub-container-4 {
-    padding-right: 10px;
+.pagination-icon {
+    height: 30px;
+    vertical-align: -webkit-baseline-middle;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
-.room-3a,
-.room-3b,
-.room-3c,
-.room-2a,
-.room-2b,
-.room-2c,
-.room-1a,
-.room-1b,
-.room-1c,
-.room-4a,
-.room-4b,
-.room-4c {
-    margin-bottom: 20px;
+.pg-active {
+    background: #C1A87D !important;
+    color: white;
+}
+
+@media screen and (min-width: 480px){
+  main{
+    position: relative;
+    top: 12rem;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+@media screen and (min-width:500px ){
+  .room{
+    flex-basis: 45%;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+    .pagination-wrapper a {
+        padding: 5px;
+    }
+
+    .item {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    .search {
+      justify-content: start;
+    }
+    .pg-active {
+        padding: 10px !important;
+        height: 30px !important;
+        width: 30px !important;
+        display: inherit;
+    }
+
+    .pagination-wrapper a {
+        height: 25px;
+        width: 25px;
+        display: inherit;
+    }
+    .room-check-in, #check-in,
+    .room-check-out, #check-out,
+    .room-number, #room-number,
+    .guest, #guests {
+        width: 70%;
+    }
+.room-filter {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+}
+    .search,
+    .room-check-in,
+    .room-check-out,
+    .guest,
+    .room-number {
+        width: 90%;
+        /* background: blue */
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .pagination-wrapper a {
+        height: 50px;
+        width: 50px;
+        display: inherit;
+    }
 }
 
 /* PAGINATION STARTS HERE */
-.pagination-container{
-    margin-bottom: 20rem;
-  }
-  
-  .pagination{
+
+.pagination {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: baseline;
-  }
-  
-  .pagination-link{
+    margin-top: 40px;
+}
+
+.pagination-link {
     height: 40px;
     width: 40px;
     padding: .5rem;
@@ -187,26 +269,26 @@
     align-items: center;
     border-radius: 50%;
     transition: all .3s linear;
-  }
-  
-  .pagination-link:hover{
+}
+
+.pagination-link:hover {
     color: #FFF !important;
     background-color: #C1A87D;
-  }
-  
-  .pglink-active{
+}
+
+.pglink-active {
     color: #FFF;
     background-color: #C1A87D;
-  }
-  
-  .control{
+}
+
+.control {
     color: #333;
     margin: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+
 /* PAGINATION ENDS HERE */
 /* ############ ROOMS STYLES FOR MOBILE ENDS HERE  ################################## */
 /* ############ ALL STYLES FOR DESKTOP AND TABLETS STARTS HERE  ################################## */
@@ -238,10 +320,19 @@
 
     .room-default select {
         width: 150px;
+        border: 1px solid blue;
     }
 
     .search input {
         padding-top: 30px;
+        width: 150px;
+    }
+
+    #check-in,
+    #check-out,
+    #room-number,
+    #guests {
+        width: 150px;
     }
 
     p.slogan {
@@ -250,4 +341,11 @@
     }
 }
 
-/* ############ ALL STYLES FOR DESKTOP AND TABLETS ENDS HERE  ################################## */
+@media screen and (min-width:769px ){
+  .gallery{
+    margin: 0 3%;
+  }
+  .room{
+    flex-basis: 30%;
+  }
+}
