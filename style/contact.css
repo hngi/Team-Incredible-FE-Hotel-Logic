@@ -16,6 +16,7 @@ main{
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .contact-fqa,
@@ -220,7 +221,9 @@ main{
 }
 .contact-first-wrapper {
   display: flex;
-  width: 90%;
+  width: 100%;
+  padding: 0 10px;
+  justify-content: center;
 }
 
 .contact-form {
@@ -311,7 +314,6 @@ form .submit:hover{
     border: 1px solid #eeeeee;
     padding: 30px;
     border-radius: 20px;
-    margin-bottom: 100px;
   }
 
   .contact-form {
@@ -321,10 +323,8 @@ form .submit:hover{
 
 @media screen and (min-width: 700px) {
   .contact-div {
-    width: 90%;
     position: relative;
     padding: 10px;
-    left: calc(45% - 330px);
   }
 }
 
