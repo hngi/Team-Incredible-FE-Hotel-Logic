@@ -8,6 +8,7 @@ main{
   max-width: 90%;
   margin: 0 auto;
 }
+
 .filter-form{
   display: flex;
   flex-flow: column wrap;
@@ -21,11 +22,13 @@ label{
     align-items: center;
     justify-content: space-between;
 }
+
 input, select{
   height: 2rem;
 }
+
 .gallery-container{
-  margin: 2rem 0 12rem 0;
+  margin: 2rem 0 6rem 0;
 }
 
 .gallery{
@@ -35,6 +38,7 @@ input, select{
   align-items:stretch;
   margin: 0 10%;
 }
+
 .room{
     border: 1px solid black;
     border-radius: 20px;
@@ -49,6 +53,52 @@ input, select{
 .room img {
   max-width: 100%;
   border-radius: 20px;
+}
+
+.pagination{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.pagination-link{
+  height: 40px;
+  width: 40px;
+  padding: .5rem;
+  display: inline-block;
+  text-align: center;
+  background-color: #EEE;
+  color: #333;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all .3s linear;
+}
+
+.pagination-link:hover{
+  color: #FFF !important;
+  background-color: #C1A87D;
+}
+
+.pglink-active{
+  color: #FFF;
+  background-color: #C1A87D;
+}
+
+.control{
+  color: #333;
+  margin: 0.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  margin-top: 10rem;
 }
 
 @media screen and (min-width:500px ){
