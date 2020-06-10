@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     background: #ffffff;
     font-family: "Poppins", sans-serif;
@@ -15,7 +15,7 @@
 }
 
 .services,
-.enjoy-deal, 
+.enjoy-deal,
 .upcoming-event,
 .room-suites {
 display: flex;
@@ -24,7 +24,7 @@ flex-wrap: wrap;
 padding: 10px 0 40px 0;
 }
 .service-head,
-.event-head, 
+.event-head,
 .room-suites-head {
 width: 100%;
 text-align: center;
@@ -32,7 +32,7 @@ padding: 20px 0;
 margin-bottom: 20px;
 font-size: 1.3rem;
 }
-.event-wrapper, 
+.event-wrapper,
 .room-suites-wrapper {
 width: 80%;
 display: flex;
@@ -57,6 +57,12 @@ flex-wrap: wrap;
   border: 1px solid #EEEEEE;
   border-radius: 20px;
   padding-top: 52px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .box-image {
@@ -70,9 +76,18 @@ flex-wrap: wrap;
   text-align: center;
 }
 
-/* .airport-pickup, 
-.comp-breakfast, 
-.cocktail, 
+.box:hover {
+  color: #C1A87D;
+  box-shadow: 2px 2px 10px #C1A87D;
+}
+
+
+/* .box:hover .box p {
+} */
+
+/* .airport-pickup,
+.comp-breakfast,
+.cocktail,
 .city-tour {
   border-radius: 5px;
 } */
@@ -93,14 +108,40 @@ width: 47%;
 height: 450px;
 }
 .event-wrapper > div {
-width: 30%;
-height: 300px;
-border-radius: 15px;
-border: 1px solid #d6d2d2;
+        width: 30%;
+        height: 300px;
+        border-radius: 15px;
+        border: 1px solid #d6d2d2;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+}
+.event:hover{
+  box-shadow: 2px 2px 10px #C1A87D;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 .suites {
 border: 1px solid #d6d2d2;
 border-radius: 15px;
+-webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+}
+
+.scale-room-suite:hover{
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  box-shadow: 2px 2px 10px #C1A87D;
+  /* transform: scale(1.03); */
 }
 .room > div{
 width: 100%;
@@ -109,6 +150,13 @@ margin-bottom: 20px;
 border: 1px solid #d6d2d2;
 border-radius: 15px;
 box-sizing: border-box;
+-webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
 
 }
 .deal-wrapper {
@@ -135,14 +183,14 @@ background-size: cover;
 .golf-tour, .party-event, .event-conf,
 .suites, .room-1, .room-2 {
 display: flex;
-justify-content: start;
+justify-content: flex-start;
 align-items: flex-end;
 }
 .golf-tour p, .party-event p, .event-conf p,
 .suites p, .room-1 p, .room-2 p {
-font-size: 24px;
-color: white;
-padding: 20px 10px;
+  font-size: 18px;
+  color: white;
+  padding: 20px 10px;
 }
 .suites {
 background: url('../assets/images/home/hotel-suites.jpg');
@@ -171,9 +219,9 @@ line-height: 2;
 }
 
 .subscribe-form {
-display: flex;
-justify-content: center;
-width: 100%;
+  display: flex;
+  justify-content: center;
+  width: auto;
 }
 .subscribe-form > div {
 display: flex;
@@ -187,6 +235,18 @@ margin-right: 10px;
 width: 100%;
 font-size: 20px;
 }
+.subscribe-form input::-moz-placeholder {
+color: gray;
+opacity: 0.4;
+}
+.subscribe-form input:-ms-input-placeholder {
+color: gray;
+opacity: 0.4;
+}
+.subscribe-form input::-ms-input-placeholder {
+color: gray;
+opacity: 0.4;
+}
 .subscribe-form input::placeholder {
 color: gray;
 opacity: 0.4;
@@ -197,12 +257,12 @@ padding: 7px 15px;
 font-size: 20px;
 border: 0;
 color: white;
-background: rgb(189, 166, 63);
+background: rgb(197, 149, 65); 
 border-radius: 5px;
 cursor: pointer;
 }
 .subscribe-form button:hover {
-background: rgb(168, 148, 55);
+background: rgb(180, 136, 60); 
 }
 
 .partners-head h2,
@@ -221,7 +281,7 @@ padding: 50px 30px;
 font-family: Poppins;
 font-style: normal;
 font-weight: 600;
-font-size: 32px;
+font-size: 40px;
 line-height: 54px;
 color: #333333;
 text-align: center;
@@ -289,10 +349,22 @@ background-size: contain;
 background-repeat: no-repeat;
 margin-top: 200px;
 }
+@media(max-width:1000px){
+   .test{
+     margin-top:-140px;
+   }
+   .test-map{
+
+    padding-top:0px !important;
+    margin-bottom:70px !important;
+    
+  }
+}
 @media(min-width:800px){
   .map-img5{
     margin-top:33%;
   }
+
   .map-img3{
     margin-left:10.42%;
   }
@@ -304,9 +376,7 @@ margin-top: 200px;
 @media (max-width:448px){
   .test-text{
     justify-self: center;
-    margin-top: -100px !important;
-    width:250px;
-    height:200px;
+
   }
   .map-img5{
     margin-top:28%;
@@ -316,6 +386,9 @@ margin-top: 200px;
 @media (max-width:800px){
   .map-img{
     width:9vh;
+  }
+  .test-map{
+    margin-bottom: 50px;
   }
 }
 
@@ -365,11 +438,12 @@ margin-top: 200px;
     padding-top: 25px;
     margin-bottom: 30px;
   }
-  .our-partners > div {
+  .our-partners {
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    margin: 0 44px;
   }
   .enjoy-deal {
     padding-bottom: 20px;
@@ -377,23 +451,42 @@ margin-top: 200px;
   .deal-wrapper > div {
     padding-top: 0;
     padding-bottom: 5px;
-    margin: 0;
+    margin: 0 50px;
+  }
+  .deal-wrapper .deal-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 46px;
   }
   .deal-wrapper,
-  .subscribe-form > div {
+  .subscribe-form  div {
     width: 90%;
   }
   .deal-head h2 {
     font-size: 1.3rem;
     margin-top: 0;
   }
+  .subscribe-form div {
+    margin-top: 20px;
+  }
   .subscribe-form input {
-    width: 60%;
-    font-size: 16px;
+    padding-top: 20px;
+    width: 81%;
+    font-size: 8px;
   }
   .subscribe-form button {
     padding: 5px 10px;
-    width: 100px;
+    width: auto;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .our-partners > div {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    width: 74%;
+    margin: 0;
   }
 }
