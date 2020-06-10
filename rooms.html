@@ -113,38 +113,28 @@
 
 
   <main>
-    <div class="form-container">
-      <form name="filter-form" class="filter-form">
-        <label>
-          <!-- FILTER SEARCH -->
-          <input type="text" placeholder="Filter search" class="search-input-filter">
-        </label>
-        <label>
-          CHECK-IN
-          <input type="date" name="check-in" id="">
-        </label>
-        <label>
-          CHECK-OUT
-          <input type="date" name="check-out" id="">
-        </label>
-        <label>
-          ROOMS
-          <select name="numOfRooms" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </label>
-        <label>
-          GUESTS
-          <select name="numOfGuests" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
-        </label>
-      </form>
+    <div class="room-filter">
+      <div class="search">
+        <span>Filter Search</span>        
+      </div>
+      <div class="room-default room-check-in">
+        <h5>check in</h5>
+        <input type="date" name="check-in" id="check-in">
+      </div>
+      <div class="room-default room-check-out">
+        <h5>check out</h5>
+        <input type="date" name="check-out" id="check-out">
+      </div>
+      <div class="room-default room-number">
+        <h5>rooms</h5>
+        <input type="number" name="room-number" id="room-number">
+      </div>
+      <div class="room-default guest">
+        <h5>guests</h5>
+        <input type="number" name="guests" id="guests">
+      </div>
     </div>
+
 
     <div class="gallery-container">
       <div class="gallery">
@@ -215,11 +205,11 @@
     <!-- End of gallery container -->
     <div class="pagination-container">
       <div class="pagination">
-        <a href="#" class="control"><span>&#8592; </span> prev</a>
+        <a href="#" class="control"><span class="">&#8592; </span> prev</a>
         <a href="#" class="pglink-active pagination-link">1</a>
         <a href="#" class="pagination-link">2</a>
         <a href="#" class="pagination-link">3</a>
-        <a href="#" class="control">next <span> &#8594;</span></a>
+        <a href="#" class="control">next <span class="next"> &#8594;</span></a>
       </div>
     </div>
     <!-- ##### pagination for rooms ends ################ -->
