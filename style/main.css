@@ -139,7 +139,7 @@
 }
 .golf-tour p, .party-event p, .event-conf p,
 .suites p, .room-1 p, .room-2 p {
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   padding: 20px 10px;
 }
@@ -172,7 +172,7 @@
 .subscribe-form {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: auto;
 }
 .subscribe-form > div {
   display: flex;
@@ -263,11 +263,12 @@
     padding-top: 25px;
     margin-bottom: 30px;
   }
-  .our-partners > div {
+  .our-partners {
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    margin: 0 44px;
   }
   .enjoy-deal {
     padding-bottom: 20px;
@@ -275,23 +276,43 @@
   .deal-wrapper > div {
     padding-top: 0;
     padding-bottom: 5px;
-    margin: 0;
+    margin: 0 50px;
+  }
+  .deal-wrapper .deal-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 46px;
   }
   .deal-wrapper,
-  .subscribe-form > div {
+  .subscribe-form  div {
     width: 90%;
   }
   .deal-head h2 {
     font-size: 1.3rem;
     margin-top: 0;
   }
+  .subscribe-form div {
+    margin-top: 20px;
+  }
   .subscribe-form input {
-    width: 60%;
-    font-size: 16px;
+    padding-top: 20px;
+    width: 81%;
+    font-size: 8px;
   }
   .subscribe-form button {
     padding: 5px 10px;
-    width: 100px;
+    width: auto;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .our-partners > div {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    width: 74%;
+    margin: 0;
   }
 }
