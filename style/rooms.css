@@ -1,6 +1,6 @@
 main{
     position: relative;
-    top: 8rem;
+    top: 3rem;
     font-family: Poppins, sans-serif;
 }
 
@@ -25,6 +25,12 @@ label{
 
 input, select{
   height: 2rem;
+}
+
+.search {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
 
 .search,
@@ -172,7 +178,7 @@ footer{
 @media screen and (min-width: 480px){
   main{
     position: relative;
-    top: 16rem;
+    top: 12rem;
     font-family: Poppins, sans-serif;
   }
 }
@@ -193,7 +199,9 @@ footer{
         margin-right: 0.5rem;
         margin-left: 0.5rem;
     }
-
+    .search {
+      justify-content: start;
+    }
     .pg-active {
         padding: 10px !important;
         height: 30px !important;
@@ -238,15 +246,13 @@ footer{
 }
 
 /* PAGINATION STARTS HERE */
-.pagination-container {
-    margin-bottom: 20rem;
-}
 
 .pagination {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: baseline;
+    margin-top: 40px;
 }
 
 .pagination-link {
