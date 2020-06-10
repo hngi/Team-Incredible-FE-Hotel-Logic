@@ -325,6 +325,9 @@ margin-top: 200px;
   .map-img{
     width:9vh;
   }
+  .test-map{
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 870px) {
