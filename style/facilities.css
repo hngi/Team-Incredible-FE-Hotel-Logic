@@ -231,18 +231,15 @@ main{
     }
     .facility {
         margin-bottom: 10px;
-        width: 350px;
+        width: 250px;
         padding-top: 250px;
+        height: 200px;
     }
 
    #facilities .d-flex {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .events {
-        padding-top: 210px;
     }
 
     main {
@@ -259,7 +256,6 @@ main{
     }
     .icon-box {
         margin-bottom: 40px;
-        width: 200px
     }
 }
 
