@@ -8,7 +8,6 @@ qsAll('.collapse-btn').forEach(x => {
     let panel = (e.target.nodeName === "I")
       ? e.target.parentNode.parentNode.nextElementSibling
       : e.target.parentNode.nextElementSibling;
-    console.log(panel);
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
       e.target.style.transform = "rotate(0deg)";
