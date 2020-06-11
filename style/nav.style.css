@@ -372,6 +372,7 @@ margin-top: 5px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 700px;
     width: 100%;
 }
