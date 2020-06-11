@@ -173,7 +173,7 @@ main{
 }
 
 @media screen and (min-width:720px) {
-  
+
 
     .facility {
         width: 320px;
@@ -315,7 +315,7 @@ main{
 
 #facilities .d-flex{
   flex-direction: row;
-  margin-left:25px;
+  margin-left:90px;
 }
 
 .facility{
@@ -389,6 +389,9 @@ iPad pro
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
 
+  #facilities .d-flex{
+    margin-left:40px;
+  }
 
   .facility{
     width: 300px;
