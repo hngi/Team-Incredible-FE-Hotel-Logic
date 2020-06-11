@@ -1,6 +1,6 @@
 main{
     position: relative;
-    top: 16rem;
+    top: 4rem;
     font-family: Poppins, sans-serif;
 }
 
@@ -45,7 +45,7 @@ label{
 #check-out,
 #room-number,
 #guests {
-    padding: 5px 10px;
+    padding: 10px;
     border: 1px solid rgba(128, 95, 3, 0.404);
     border-radius: 5px;
     width: 250px;
@@ -220,7 +220,7 @@ footer{
     .room-check-out, #check-out,
     .room-number, #room-number,
     .guest, #guests {
-        width: 70%;
+        width: 100%;
     }
 .room-filter {
     margin-top: 30px;
