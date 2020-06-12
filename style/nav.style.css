@@ -11,11 +11,9 @@ a:visited {
     outline: none;
     /* color: #fff; */
 }
-a:hover{
+a:not(.log-name):hover{
   color: #C1A87D!important;
 }
-
-
 
 .row__nav a:visited{
   color: #333;
