@@ -66,6 +66,7 @@ main{
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 #facilities .d-flex {
@@ -135,6 +136,7 @@ main{
     height: 150px;
     width: 150px;
     padding-top: 40px;
+    cursor: pointer;
 }
 
 .icon-box:hover {

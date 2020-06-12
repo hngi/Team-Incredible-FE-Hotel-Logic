@@ -38,6 +38,7 @@ width: 80%;
 display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
+cursor: pointer;
 }
 .service-wrapper {
 width: 80%;
@@ -47,7 +48,7 @@ flex-wrap: wrap;
 }
 .service-wrapper > div {
   /* width: 20%; */
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .box {
@@ -70,6 +71,7 @@ flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 
 .box p {
@@ -119,6 +121,7 @@ height: 450px;
         -moz-transition: all 0.5s ease-in-out;
         -ms-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
+        cursor: pointer;
 }
 .event:hover{
   box-shadow: 2px 2px 10px #C1A87D;
@@ -257,12 +260,12 @@ padding: 7px 15px;
 font-size: 20px;
 border: 0;
 color: white;
-background: rgb(197, 149, 65); 
+background: rgb(197, 149, 65);
 border-radius: 5px;
 cursor: pointer;
 }
 .subscribe-form button:hover {
-background: rgb(180, 136, 60); 
+background: rgb(180, 136, 60);
 }
 
 .partners-head h2,
@@ -357,7 +360,7 @@ margin-top: 200px;
 
     padding-top:0px !important;
     margin-bottom:70px !important;
-    
+
   }
 }
 @media(min-width:800px){
