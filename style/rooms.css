@@ -94,6 +94,7 @@ label {
   height: 300px;
   border-radius: 20px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 /* ############ RROMS STYLES FOR MOBILE STARTS HERE  ################################## */
@@ -139,7 +140,7 @@ label {
   justify-content: center;
   align-items: baseline;
 }
-
+/*
 .pagination-link {
   height: 40px;
   width: 40px;
@@ -158,9 +159,9 @@ label {
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-}
+} */
 
-.pagination-link:hover {
+/* .pagination-link:hover {
   color: #fff !important;
   background-color: #c1a87d;
 }
@@ -168,7 +169,7 @@ label {
 .pglink-active {
   color: #fff;
   background-color: #c1a87d;
-}
+} */
 
 .room h5 {
   font-weight: 500;
@@ -283,27 +284,28 @@ footer {
   align-items: baseline;
   margin-top: 40px;
 }
-
 .pagination-link {
-  height: 40px;
-  width: 40px;
-  padding: 0.5rem;
-  display: inline-block;
-  text-align: center;
-  background-color: #eee;
-  color: #333;
-  margin: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    background-color: #eee;
+    color: #333;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
-
 .pagination-link:hover {
   color: #fff !important;
   background-color: #c1a87d;
@@ -315,11 +317,19 @@ footer {
 }
 
 .control {
-  color: #333;
-  margin: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    color: #333;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.control[disabled]{
+  cursor: not-allowed;
 }
 
 /* PAGINATION ENDS HERE */
