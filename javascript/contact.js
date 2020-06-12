@@ -5,9 +5,7 @@ const qsAll = elem => document.querySelectorAll(elem);
 // Collapsing FQS Panel
 qsAll('.collapse-btn').forEach(x => {
   x.addEventListener('click', (e) => {
-    let panel = (e.target.nodeName === "I")
-      ? e.target.parentNode.parentNode.nextElementSibling
-      : e.target.parentNode.nextElementSibling;
+    let panel = e.target.parentNode.nextElementSibling
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
       e.target.style.transform = "rotate(0deg)";
