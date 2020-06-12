@@ -1,22 +1,29 @@
-main{
-    position: relative;
-    top: 4rem;
-    font-family: Poppins, sans-serif;
+main {
+  position: relative;
+  top: 4rem;
+  font-family: Poppins, sans-serif;
 }
 
-.form-container{
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-container {
   max-width: 90%;
   margin: 0 auto;
 }
 
-.filter-form{
+.filter-form {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-label{
+label {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,340 +33,347 @@ label{
   font-size: smaller;
 }
 
+.room-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 25px;
+}
+
 .search {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-}
-
-.search,
-.room-check-in,
-.room-check-out,
-.guest,
-.room-number {
-    width: 15%;
-    /* background: blue */
+  margin-right: 52px;
 }
 
 #check-in,
 #check-out,
 #room-number,
 #guests {
-    padding: 10px;
-    border: 1px solid rgba(128, 95, 3, 0.404);
-    border-radius: 5px;
-    width: 250px;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  height: 40px;
 }
 
-.search input {
-    border-bottom: 1px solid #E5E5E5;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-}
-
-
-.gallery{
+.gallery-container {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
-  align-items:stretch;
-  margin: 0 10%;
+  align-content: center;
+  width: 100%;
 }
 
-.room{
-    border: 1px solid #E5E5E5;
-    border-radius: 20px;
-    padding: .0.2rem 0.1rem;
-    display: flex;
-    flex-flow: column nowrap;
-    /* justify-content: space-evenly; */
-    align-items: center;
-    margin-top: 3rem;
-    box-shadow: 0px 0px 5px rgb(177, 177, 177);
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room {
+  width: 310px;
+  height: 450px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 0.2rem 0.1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 3rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.room:hover {
+  box-shadow: 0px 0px 5px rgb(177, 177, 177);
 }
 
 .room img {
-  max-width: 102%;
+  width: 300px;
+  height: 300px;
   border-radius: 20px;
-  /* padding-top: 0.2rem; */
-  box-shadow: 0px 0px 5px rgb(177, 177, 177);
+  object-fit: cover;
 }
 
 /* ############ RROMS STYLES FOR MOBILE STARTS HERE  ################################## */
 .room-default h5 {
-    padding-bottom: 5px;
-    text-transform: capitalize;
-    font-family: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
-    padding-top: 10px;
-    font-size: 14px;
-    color: #333333;
-    width: 100px;
-    padding-bottom: 5px
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  font-family: url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
+  padding-top: 10px;
+  font-size: 14px;
+  color: #333333;
+  /* width: 100px; */
+  padding-bottom: 5px;
+  text-align: center;
 }
 
-.room__price{
-font-style: normal;
-font-weight: 500;
-font-size: 29px;
-color: #333;
-padding: .5rem 0;
+.room__type {
+  margin-top: 34px;
 }
 
-.room__price small{
+.room__price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29px;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+.room__price small {
   color: #999999;
   font-style: normal;
-font-weight: normal;
-font-size: 18px;
+  font-weight: normal;
+  font-size: 18px;
 }
 
-.pagination-container{
-  margin-bottom: 20rem;
+.pagination-container {
+  margin-bottom: 186px;
+  width: 100%;
 }
 
-.pagination{
+.pagination {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: baseline;
 }
 
-.pagination-link{
+.pagination-link {
   height: 40px;
   width: 40px;
-  padding: .5rem;
+  padding: 0.5rem;
   display: inline-block;
   text-align: center;
-  background-color: #EEE;
+  background-color: #eee;
   color: #333;
   margin: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: all .3s linear;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -ms-transition: all .3s linear;
-  -o-transition: all .3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 
-.pagination-link:hover{
-  color: #FFF !important;
-  background-color: #C1A87D;
+.pagination-link:hover {
+  color: #fff !important;
+  background-color: #c1a87d;
 }
 
-.pglink-active{
-  color: #FFF;
-  background-color: #C1A87D;
+.pglink-active {
+  color: #fff;
+  background-color: #c1a87d;
 }
 
 .room h5 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 43px;
-    text-align: center;
-    color: #333333;
-    padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 43px;
+  text-align: center;
+  color: #333333;
+  padding-bottom: 20px;
 }
 
-footer{
+footer {
   margin-top: 10rem;
 }
 
 .pagination-icon {
-    height: 30px;
-    vertical-align: -webkit-baseline-middle;
-    padding-bottom: 10px;
-    padding-left: 10px;
+  height: 30px;
+  vertical-align: -webkit-baseline-middle;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .pg-active {
-    background: #C1A87D !important;
-    color: white;
+  background: #c1a87d !important;
+  color: white;
 }
 
-@media screen and (min-width: 480px){
-  main{
+@media screen and (max-width: 768px) {
+  .room {
+    width: 284px;
+    height: 450px;
+  }
+
+  .room img {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  main {
     position: relative;
     top: 12rem;
     font-family: Poppins, sans-serif;
   }
 }
 
-@media screen and (min-width:500px ){
-  .room{
+@media screen and (min-width: 500px) {
+  .room {
     flex-basis: 45%;
   }
 }
 
 @media screen and (max-width: 750px) {
-    .pagination-wrapper a {
-        padding: 5px;
-    }
+  .pagination-wrapper a {
+    padding: 5px;
+  }
 
-    .item {
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-    }
-    .search {
-      justify-content: start;
-    }
-    .pg-active {
-        padding: 10px !important;
-        height: 30px !important;
-        width: 30px !important;
-        display: inherit;
-    }
+  .item {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .search {
+    justify-content: start;
+  }
+  .pg-active {
+    padding: 10px !important;
+    height: 30px !important;
+    width: 30px !important;
+    display: inherit;
+  }
 
-    .pagination-wrapper a {
-        height: 25px;
-        width: 25px;
-        display: inherit;
-    }
-    .room-check-in, #check-in,
-    .room-check-out, #check-out,
-    .room-number, #room-number,
-    .guest, #guests {
-        width: 100%;
-    }
-.room-filter {
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: block;
+  .pagination-wrapper a {
+    height: 25px;
+    width: 25px;
+    display: inherit;
+  }
+  .room-check-in,
+  #check-in,
+  .room-check-out,
+  #check-out,
+  .room-number,
+  #room-number,
+  .guest,
+  #guests {
+    width: 100%;
+  }
 }
-    .search,
-    .room-check-in,
-    .room-check-out,
-    .guest,
-    .room-number {
-        width: 90%;
-        /* background: blue */
-    }
+
+@media screen and (max-width: 400px) {
+  .search {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .room-default {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 750px) {
-    .pagination-wrapper a {
-        height: 50px;
-        width: 50px;
-        display: inherit;
-    }
+  .pagination-wrapper a {
+    height: 50px;
+    width: 50px;
+    display: inherit;
+  }
 }
 
 /* PAGINATION STARTS HERE */
 
 .pagination {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: baseline;
-    margin-top: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 40px;
 }
 
 .pagination-link {
-    height: 40px;
-    width: 40px;
-    padding: .5rem;
-    display: inline-block;
-    text-align: center;
-    background-color: #EEE;
-    color: #333;
-    margin: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  background-color: #eee;
+  color: #333;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 
 .pagination-link:hover {
-    color: #FFF !important;
-    background-color: #C1A87D;
+  color: #fff !important;
+  background-color: #c1a87d;
 }
 
 .pglink-active {
-    color: #FFF;
-    background-color: #C1A87D;
+  color: #fff;
+  background-color: #c1a87d;
 }
 
 .control {
-    color: #333;
-    margin: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: #333;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* PAGINATION ENDS HERE */
 /* ############ ROOMS STYLES FOR MOBILE ENDS HERE  ################################## */
 /* ############ ALL STYLES FOR DESKTOP AND TABLETS STARTS HERE  ################################## */
-@media screen and (min-width:576px) {
-    .room-container {
-        margin: 150px auto 0 auto;
-    }
+@media screen and (max-width: 576px) {
+  .room-container {
+    margin: 150px auto 0 auto;
+  }
 
-    .sub-cont {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding-top: 20px;
-    }
+  .sub-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
 
-    .room-dir-control {
-        max-width: 500px;
-        margin: 0 auto;
-    }
+  .room-dir-control {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-    .room-filter {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 30px;
-    }
+  .room-default select {
+    width: 150px;
+    border: 1px solid blue;
+  }
 
-    .room-default select {
-        width: 150px;
-        border: 1px solid blue;
-    }
+  .search input {
+    padding-top: 30px;
+    width: 150px;
+  }
 
-    .search input {
-        padding-top: 30px;
-        width: 150px;
-    }
+  #check-in,
+  #check-out,
+  #room-number,
+  #guests {
+    width: 210px;
+    margin: 0 43px;
+  }
 
-    #check-in,
-    #check-out,
-    #room-number,
-    #guests {
-        width: 150px;
-    }
-
-    p.slogan {
-        font-family: Segoe UI;
-        margin-top: 10px;
-    }
+  p.slogan {
+    font-family: Segoe UI;
+    margin-top: 10px;
+  }
 }
 
-@media screen and (min-width:769px ){
-  .gallery{
-    margin: 0 3%;
-  }
-  .room{
+@media screen and (min-width: 769px) {
+  .room {
     flex-basis: 30%;
   }
 }
-
-
-
 
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -367,35 +381,15 @@ footer{
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-
-  .search{
+  .search {
     display: none;
   }
 
-  .search, .room-check-in, .room-check-out, .guest, .room-number{
+  .search,
+  .room-check-in,
+  .room-check-out,
+  .guest,
+  .room-number {
     width: 20%;
   }
-
-  .room-filter{
-    transform: translateX(-20px);
-    -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
-    -o-transform: translateX(-20px);
-}
-}
-
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-.search{
-  display: none;
-}
-
-.search, .room-check-in, .room-check-out, .guest, .room-number{
-  width: 22%;
-}
 }
