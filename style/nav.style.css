@@ -868,6 +868,10 @@ font-family: Poppins;
 
 @media (min-width: 320px) and (max-width: 480px) {
 
+  .home__page.col__nav a:visited{
+    color: #333;
+  }
+
   .navbar.row__nav{
     margin-top: 5px;
   }
