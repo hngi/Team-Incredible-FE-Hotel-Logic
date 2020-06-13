@@ -397,13 +397,6 @@
     justify-content: center;
   }
 
-  .test-word{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 31px;
-    transform: translateX(-25px);
-  }
   .test-text {
     margin-top: 0;
     width: 300px;
