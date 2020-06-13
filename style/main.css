@@ -397,6 +397,13 @@
   .test-text {
     margin-top: 0;
   }
+  .test-map {
+    width: 100%;
+  }
+  .test-map img {
+    width: 37.79px;
+    height: 37.88px;
+  }
   .upcoming-event {
     padding-top: 214px;
   }
