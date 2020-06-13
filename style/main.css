@@ -383,8 +383,8 @@
   }
   .room-suites-wrapper > div,
   .event-wrapper > div {
-    height: 214px;
-    width: 90%;
+    height: 250px;
+    width: 100%;
     margin-bottom: 25px;
   }
   .service-wrapper {
