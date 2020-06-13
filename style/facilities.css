@@ -200,7 +200,7 @@ main{
     }
 
     .page-title p {
-        width: 90%;
+        width: 70%;
         font-size: 18px;
     }
 
@@ -228,8 +228,9 @@ main{
     }
 
     .page-title p {
-        width: 100%;
-        font-size: 18px;
+        width: 90%;
+        font-size: 15px;
+        text-align: auto;
     }
     .facility {
         margin-bottom: 10px;
@@ -413,8 +414,10 @@ iPad pro
     padding: 20px 100px;
   }
 
-  .icon-section .icon-box{
-
+}
+@media screen and (min-width:1100px){
+  .d-flex{
+    width: 1200px;
+    margin: 0 auto;
   }
-
 }
