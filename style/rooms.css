@@ -301,6 +301,10 @@ footer {
     cursor: pointer;
 }
 
+.pre, .next {
+  margin: 0 7px;
+}
+
 .control[disabled]{
   cursor: not-allowed;
 }
