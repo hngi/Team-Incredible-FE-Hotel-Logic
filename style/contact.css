@@ -253,10 +253,14 @@ main{
 }
 .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  padding: 10px 35px;
 }
 .social-icons img {
   padding: 20px 0px 8px ;
+}
+.social-icons > a {
+  margin-right: 30px;
 }
 .sendmessage {
   display: flex;
