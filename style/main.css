@@ -474,9 +474,10 @@ margin-top: 200px;
     margin-top: 20px;
   }
   .subscribe-form input {
-    padding-top: 20px;
+    padding: .5rem;
     width: 81%;
-    font-size: 8px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .subscribe-form button {
     padding: 5px 10px;
@@ -489,7 +490,22 @@ margin-top: 200px;
     display: flex;
     justify-content: center;
     padding: 30px 0;
-    width: 74%;
+    /* width: 74%; */
     margin: 0;
   }
+
+  .subscribe-form{
+    margin: 0 1rem !important;
+  }
+  .subscribe-form>div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subscribe-form  button {
+    margin-top: 1rem;
+  }
+
+
 }
