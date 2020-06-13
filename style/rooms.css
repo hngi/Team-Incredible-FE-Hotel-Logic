@@ -45,6 +45,7 @@ label {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-bottom: 0.7%;
 }
 
 #check-in,
@@ -56,6 +57,7 @@ label {
   border-radius: 20px;
   height: 40px;
   width: 100%;
+  text-align: center;
 }
 
 .gallery-container {
@@ -81,8 +83,9 @@ label {
   flex-flow: column nowrap;
   align-items: center;
   margin-top: 3rem;
-  /* margin-right: auto; */
+  padding-top: 0.4%;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .room:hover {
@@ -90,28 +93,35 @@ label {
 }
 
 .room img {
-  width: 100%;
+  width: 97%;
   height: 300px;
   border-radius: 20px;
   object-fit: cover;
-  cursor: pointer;
 }
 
 /* ############ RROMS STYLES FOR MOBILE STARTS HERE  ################################## */
 .room-default h5 {
-  padding-bottom: 5px;
   text-transform: capitalize;
-  font-family: url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap");
   padding-top: 10px;
+  padding-bottom: 5px;
   font-size: 14px;
   color: #333333;
-  /* width: 100px; */
-  padding-bottom: 5px;
   text-align: center;
+}
+
+.room-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 30%;
 }
 
 .room__type {
   margin-top: 34px;
+  color: #777777;
+  font-weight: bold;
+  font-size: 18px;
+  /* margin-right: 40%; */
 }
 
 .room__price {
@@ -120,6 +130,7 @@ label {
   font-size: 29px;
   color: #333;
   padding: 0.5rem 0;
+  /* margin-right: 40%; */
 }
 
 .room__price small {
@@ -140,36 +151,6 @@ label {
   justify-content: center;
   align-items: baseline;
 }
-/*
-.pagination-link {
-  height: 40px;
-  width: 40px;
-  padding: 0.5rem;
-  display: inline-block;
-  text-align: center;
-  background-color: #eee;
-  color: #333;
-  margin: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-} */
-
-/* .pagination-link:hover {
-  color: #fff !important;
-  background-color: #c1a87d;
-}
-
-.pglink-active {
-  color: #fff;
-  background-color: #c1a87d;
-} */
 
 .room h5 {
   font-weight: 500;
@@ -200,10 +181,7 @@ footer {
   .room {
     width: 284px;
     height: 450px;
-  }
-
-  .room img {
-    width: 280px;
+    padding-top: 0.6%;
   }
 }
 
@@ -212,12 +190,6 @@ footer {
     position: relative;
     top: 12rem;
     font-family: Poppins, sans-serif;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .room {
-    flex-basis: 45%;
   }
 }
 
@@ -260,6 +232,7 @@ footer {
   }
   .room {
     margin-right: 0;
+    padding-top: 1%;
   }
   .gallery {
     display: flex;
@@ -373,12 +346,6 @@ footer {
   p.slogan {
     font-family: Segoe UI;
     margin-top: 10px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .room {
-    flex-basis: 30%;
   }
 }
 
