@@ -179,6 +179,7 @@ body {
   font-size: 18px;
   color: white;
   padding: 20px 10px;
+  width: 277px;
 }
 .suites {
   background: url("../assets/images/home/hotel-suites.jpg");
