@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #ffffff;
-  font-family: "Poppins", sans-serif;
-}
+  body {
+    background: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+  html,body, footer{
+
+    overflow-x: hidden;
+  }
 .container {
   width: 75%;
   margin: 0 auto;
@@ -363,7 +367,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 78%;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .event-wrapper,
   .room-suites-wrapper,
@@ -379,8 +385,8 @@ body {
   }
   .room-suites-wrapper > div,
   .event-wrapper > div {
-    height: 214px;
-    width: 90%;
+    height: 250px;
+    width: 100%;
     margin-bottom: 25px;
   }
   .service-wrapper {
@@ -390,8 +396,30 @@ body {
   .test {
     justify-content: center;
   }
+
+  .test-img1{
+    transform: translate(80px, -10px);
+  }
+  .test-word{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 31px;
+    transform: translateX(-25px);
+  }
   .test-text {
     margin-top: 0;
+    width: 500px;
+    text-align: center;
+    height: 400px;
+  }
+  .test-map {
+    width: 100vw;
+    margin-top: -30px;
+  }
+  .test-map img {
+    width: 37.79px;
+    height: 37.88px;
   }
   .upcoming-event {
     padding-top: 214px;
@@ -442,9 +470,7 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
-  .container {
-    width: 78%;
-  }
+
   .subscribe-form {
     display: flex;
     flex-wrap: wrap;
@@ -480,4 +506,55 @@ body {
   .subscribe-form button {
     margin-top: 20px;
   }
+
+  .deal-wrapper .deal-text{
+    width: 100%;
+    transform: translateX(-45px);
+  }
+
+  .test-map{
+    width: 327px;
+    height: 273.18px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .test-map img{
+    width: 27.79px;
+    height: 27.88px;
+  }
+
+
+  .map-img5 {
+    display: inline-block;
+    transform: translate(20px, -5px);
+  }
+  .map-img2 {
+    display: inline-block;
+    transform: translate(30px, -15px);
+  }
+  .map-img6 {
+    display: block;
+    transform: translate(10px, -25px);
+  }
+  .map-img3 {
+    display: inline-block;
+    transform: translate(10px, 15px);
+  }
+  .map-img4 {
+    display: inline-block;
+    transform: translate(25px, 15px);
+  }
+
+
+  .upcoming-event, .room-suites{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .box{margin-bottom: 20px;}
 }

@@ -301,6 +301,10 @@ footer {
     cursor: pointer;
 }
 
+.pre, .next {
+  margin: 0 7px;
+}
+
 .control[disabled]{
   cursor: not-allowed;
 }
@@ -355,10 +359,6 @@ footer {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .search {
-    display: none;
-  }
-
   .search,
   .room-check-in,
   .room-check-out,
