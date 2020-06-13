@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #ffffff;
-  font-family: "Poppins", sans-serif;
-}
+  body {
+    background: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+  html,body, footer{
+
+    overflow-x: hidden;
+  }
 .container {
   width: 75%;
   margin: 0 auto;
@@ -461,5 +465,44 @@ body {
 @media screen and (max-width: 500px) {
   .subscribe-form button {
     margin-top: 20px;
+  }
+
+  .deal-wrapper .deal-text{
+    width: 100%;
+    transform: translateX(-45px);
+  }
+
+  .test-map{
+    width: 327px;
+    height: 273.18px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .test-map img{
+    width: 27.79px;
+    height: 27.88px;
+  }
+
+
+  .map-img5 {
+    display: inline-block;
+    transform: translate(20px, -5px);
+  }
+  .map-img2 {
+    display: inline-block;
+    transform: translate(30px, -15px);
+  }
+  .map-img6 {
+    display: block;
+    transform: translate(10px, -25px);
+  }
+  .map-img3 {
+    display: inline-block;
+    transform: translate(10px, 15px);
+  }
+  .map-img4 {
+    display: inline-block;
+    transform: translate(25px, 15px);
   }
 }
