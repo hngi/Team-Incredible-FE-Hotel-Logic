@@ -532,3 +532,9 @@ iPad pro
       margin-top: 30px;
     }
   }
+@media (min-width:1440px){
+   .foot-section1{
+     display:none;
+     visibility: hidden;
+   }
+}
