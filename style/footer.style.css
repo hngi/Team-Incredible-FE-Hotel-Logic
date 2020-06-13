@@ -129,6 +129,7 @@ font-size:calc(1em + 1vh);
 }
 .foot-location, .foot-mail,.foot-contact{
     display:flex;
+    margin-top: 20px;
 }
 #footer-location ,#tele, #mail-box{
     display:inline-block;
@@ -159,7 +160,7 @@ font-size:calc(1em + 1vh);
     width:200px;
     display:flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 #foot-fb , #foot-tw ,#foot-inst{
     width:30px;
@@ -183,9 +184,12 @@ font-size:calc(1em + 1vh);
 }
 .foot-last{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 20px;
     padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 17%;
+    margin-top: 60px;
 }
 #foot-num{
     margin-top:0px;
@@ -246,7 +250,8 @@ font-size:calc(1em + 1vh);
         margin:auto !important;
         text-align: center;
         padding-top:20px;
-
+        padding-left: 0;
+        padding-right: 0;
     }
     .foot-service{
         display:none;
