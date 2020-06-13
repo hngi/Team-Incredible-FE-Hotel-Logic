@@ -269,16 +269,9 @@ margin-bottom: 40px;
     -o-transform: scale(.75);
 }
 @media(min-width:1400px){
-    #foot-svg{
-        visibility: hidden;
-    }
-    .foot-head p{
-        padding-top:50px !important;
-    }
-    .foot-section1{
-        display: none;
-        visibility: hidden;
-    }
+  .foot-section1{
+    transform: translateY(10px);
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
 
