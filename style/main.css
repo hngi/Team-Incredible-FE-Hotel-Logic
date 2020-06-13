@@ -397,9 +397,6 @@
     justify-content: center;
   }
 
-  .test-img1{
-    transform: translate(80px, -10px);
-  }
   .test-word{
     font-style: normal;
     font-weight: normal;
