@@ -9,17 +9,14 @@
     background: #ffffff;
     font-family: "Poppins", sans-serif;
   }
+  html,body, footer{
+
+    overflow-x: hidden;
+  }
 .container {
   width: auto;
   margin: 0 auto;
-  padding: 0 100px;
 }
-
-.services{
-  margin-top: 60px;
-}
-
-
 
 .services,
 .enjoy-deal,
@@ -28,8 +25,7 @@
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-padding: 60px 0 40px 0;
-/* margin-top: 128px; */
+padding: 10px 0 40px 0;
 }
 .service-head,
 .event-head,
@@ -37,24 +33,22 @@ padding: 60px 0 40px 0;
 width: 100%;
 text-align: center;
 padding: 20px 0;
-margin-bottom: 40px;
+margin-bottom: 20px;
 font-size: 1.3rem;
 }
 .event-wrapper,
 .room-suites-wrapper {
-width: 100%;
+width: 80%;
 display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
 cursor: pointer;
-/* padding: 0 140px; */
 }
 .service-wrapper {
 width: 80%;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
-/* padding: 0 60px; */
 }
 .service-wrapper > div {
   /* width: 20%; */
@@ -116,12 +110,11 @@ flex-wrap: wrap;
 } */
 
 .room-suites-wrapper > div {
-width: 40%;
+width: 47%;
 height: 450px;
 }
-/* .suites */
 .event-wrapper > div {
-        width: 27%;
+        width: 30%;
         height: 300px;
         border-radius: 15px;
         border: 1px solid #d6d2d2;
@@ -133,11 +126,6 @@ height: 450px;
         -ms-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
         cursor: pointer;
-        margin-left: -60px;
-}
-
-.event-wrapper{
-  margin-left: 65px;
 }
 .event:hover{
   box-shadow: 2px 2px 10px #C1A87D;
@@ -145,7 +133,6 @@ height: 450px;
           filter: grayscale(0%);
 }
 .suites {
-  margin-right: -60px;
 border: 1px solid #d6d2d2;
 border-radius: 15px;
 -webkit-filter: grayscale(100%);
@@ -165,7 +152,7 @@ transition: all 0.5s ease-in-out;
 }
 .room > div{
 width: 100%;
-height: 210px;
+height: 214px;
 margin-bottom: 20px;
 border: 1px solid #d6d2d2;
 border-radius: 15px;
@@ -178,10 +165,6 @@ transition: all 0.5s ease-in-out;
 -ms-transition: all 0.5s ease-in-out;
 -o-transition: all 0.5s ease-in-out;
 
-}
-
-.room > div:not(:last-child){
-  margin-bottom: 30px;
 }
 .deal-wrapper {
 width: 50%;
@@ -309,13 +292,11 @@ font-size: 40px;
 line-height: 54px;
 color: #333333;
 text-align: center;
-margin-top: 60px;
 }
 .test{
 display:flex;
 justify-content: space-around;
 flex-wrap: wrap;
-margin-top: -40px;
 }
 .test-map{
 width: 700px;
